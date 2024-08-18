@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../src/components/fonts/Montserrat-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+.Montserrat{
+  font-family: Montserrat;
+}
