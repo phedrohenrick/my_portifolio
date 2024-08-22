@@ -1,56 +1,86 @@
-import styled from "@emotion/styled"
 import Avatar from "../../../../assets/images/Avatar.png"
-import { Container, Grid, Typography } from "@mui/material"
+import {Box, Container, Grid, styled, Typography } from "@mui/material"
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
+import StyledButton from "../../../../components/StyledButton/StyledButton";
+import AnimatedBackground from "../../../../components/AnimatedBackground/AnimatedBackground.svg";
+import theme from "../../../../theme";
+
+
 
 const Hero = () =>{  //uma notação diferente para function 
 
-  const StyledHero = styled("div")(() => ({
-    backgroundColor : "black",
-    height: "100wh"
 
+  const StyledOut = styled('body')(({}) => ({
+    padding:"0",
+    margin:0,
+  }))
+  const StyledHero = styled("div")(({theme}) => ({
+    backgroundImage: `url(${AnimatedBackground})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    height: "120vh",
+    width: "100vw",
+    display: "flex",
+    alignItems: "center",
+
+    [theme.breakpoints.up('xs')]: { // <= mobile
+      paddingTop: "100px",
+
+  },
+  [theme.breakpoints.up('md')]: { // >=mobile
+      paddingTop: "0",
+  }
   }))
 
   const StyledImg = styled("img")(() => ({
-    
-        width:"75%",
-        borderRadius :"50%"
+        width:"90%",
+        borderRadius :"50%",
+        border: `1px solid ${theme.palette.primary.dark}`
   }))
 
 
     return (
       <>
-        
-            <StyledHero>
-              <Container>
+   
+   
+      <StyledHero>
+          <Container >
+              <Grid container spacing={3} >
+                  <Grid item xs={12} md = {5}>
+                    <Box position={"relative"}>
+                      <Box position={"absolute"}> 
+                      </Box>
+                    </Box>
+                      <StyledImg src= {Avatar}/>
+                  </Grid>
+                  <Grid item xs={12} md = {7}>
+                      <Typography variant="h1" color = "secondary" textAlign="center" pb={2}>Phedro Henrick</Typography>
+                      <Typography variant="h2" color = "secondary" textAlign="center">i'm a Web Developer</Typography>
 
-            <Grid container spacing={2}>
-                  <Grid item xs={12} md = {4}>
-                  <StyledImg src= {Avatar}/>
-                  </Grid>
-                  <Grid item xs={12} md = {8}>
-                    <Typography variant="h1" color = "primary" textAlign="center">Phedro Henrick da Silva Leão</Typography>
-                    <Typography variant="h2" color = "primary" textAlign="center"> I am a Web Developera and Studant</Typography>
-                   <Grid container display="flex" justifyContent="center">
-                    <Grid item xs = {12} md={4} >
-                    <button >
-                        <DownloadIcon sx={{ fontSize: 15 }}/>
-                        Download CV 
-                    </button >
+                    <Grid container display="flex" justifyContent="center" spacing={2} pt={3}>
+                          <Grid item xs = {12} md={6} display= "flex" justifyContent="center">
+                              <StyledButton>
+                                <DownloadIcon />
+                                <Typography>
+                                    Download CV 
+                                </Typography>
+                              </StyledButton>
+                          </Grid>
+                      <Grid item  xs = {12} md={6}  display= "flex" justifyContent="center" >
+                      <StyledButton>
+                          <EmailIcon />
+                          <Typography>
+                           Contact me 
+                         </Typography>
+                      </StyledButton>
+                      </Grid>
                     </Grid>
-                    <Grid item  xs = {12} md={4}>
-                    <button color="black">
-                        <EmailIcon sx={{ fontSize: 15 }}/>
-                        Contact me
-                    </button>
-                    </Grid>
-                   </Grid>
                   </Grid>
-                
                 </Grid>
-         </Container>
-            </StyledHero>
+              </Container>
+          </StyledHero> 
       </>
     )
 
