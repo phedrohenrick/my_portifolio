@@ -4,10 +4,10 @@ import './App.css';
 let theme = createTheme({
     palette: {
       primary: {
-        main: "#fbf5df",
+        main: "#012c32",
       },
       secondary: {
-        main: "#12300f",
+        main: "#fbf5df",
       },
     },
 
