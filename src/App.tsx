@@ -5,7 +5,7 @@ const App = () =>{  //uma notação diferente para function
 
   return (
     <>
-    <Home></Home>
+    <Home/>
     </>
   )
 }
