@@ -26,7 +26,7 @@ const Hero = () =>{  //uma notação diferente para function
     alignItems: "center",
 
     [theme.breakpoints.up('xs')]: { // <= mobile
-      paddingTop: "100px",
+      paddingTop: "40px",
 
   },
   [theme.breakpoints.up('md')]: { // >=mobile
@@ -37,7 +37,7 @@ const Hero = () =>{  //uma notação diferente para function
   const StyledImg = styled("img")(() => ({
         width:"90%",
         borderRadius :"50%",
-        border: `1px solid ${theme.palette.primary.dark}`
+        border: `1px solid ${theme.palette.primary.dark}`,
   }))
 
 
@@ -56,12 +56,12 @@ const Hero = () =>{  //uma notação diferente para function
                       <StyledImg src= {Avatar}/>
                   </Grid>
                   <Grid item xs={12} md = {7}>
-                      <Typography variant="h1" color = "secondary" textAlign="center" pb={2}>Phedro Henrick</Typography>
+                      <Typography variant="h1" color = "secondary" textAlign="center" padding={"22px"} pb={2}>Phedro Henrick</Typography>
                       <Typography variant="h2" color = "secondary" textAlign="center">i'm a Web Developer</Typography>
 
                     <Grid container display="flex" justifyContent="center" spacing={2} pt={3}>
                           <Grid item xs = {12} md={6} display= "flex" justifyContent="center">
-                              <StyledButton>
+                              <StyledButton onClick={()=> console.log("Download")}>
                                 <DownloadIcon />
                                 <Typography>
                                     Download CV 
@@ -69,7 +69,7 @@ const Hero = () =>{  //uma notação diferente para function
                               </StyledButton>
                           </Grid>
                       <Grid item  xs = {12} md={6}  display= "flex" justifyContent="center" >
-                      <StyledButton>
+                      <StyledButton onClick={()=> console.log("Download")}>
                           <EmailIcon />
                           <Typography>
                            Contact me 
