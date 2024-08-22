@@ -5,8 +5,9 @@ import { ReactNode } from "react"
 
 interface StyledButtonProps{
     children: ReactNode
+    onClick: () => void
 }
-const StyledButton: React.FC<StyledButtonProps> = ({children}) =>{  //uma notação diferente para function // estudar sobre children
+const StyledButton: React.FC<StyledButtonProps> = ({children, onClick}) =>{  //uma notação diferente para function // estudar sobre children
 
     const StyledButton = styled("button")(() => ({
     backgroundColor: "transparent",
@@ -28,7 +29,7 @@ const StyledButton: React.FC<StyledButtonProps> = ({children}) =>{  //uma notaç
     
     return (
       <>
-        <StyledButton>
+        <StyledButton onClick={onClick}>
             {children}
         </StyledButton>
       </>
