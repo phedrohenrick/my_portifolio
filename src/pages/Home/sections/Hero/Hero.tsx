@@ -56,8 +56,8 @@ const Hero = () =>{  //uma notação diferente para function
                       <StyledImg src= {Avatar}/>
                   </Grid>
                   <Grid item xs={12} md = {7}>
-                      <Typography variant="h1" color = "secondary" textAlign="center" padding={"22px"} pb={2}>Phedro Henrick</Typography>
-                      <Typography variant="h2" color = "secondary" textAlign="center">i'm a Web Developer</Typography>
+                      <Typography variant="h1" color = "secondary" textAlign="center"  pb={2}>Phedro Henrick</Typography>
+                      <Typography variant="h2" color = "secondary" textAlign="center">i'm student and Web Developer</Typography>
 
                     <Grid container display="flex" justifyContent="center" spacing={2} pt={3}>
                           <Grid item xs = {12} md={6} display= "flex" justifyContent="center">
@@ -69,7 +69,7 @@ const Hero = () =>{  //uma notação diferente para function
                               </StyledButton>
                           </Grid>
                       <Grid item  xs = {12} md={6}  display= "flex" justifyContent="center" >
-                      <StyledButton onClick={()=> console.log("Download")}>
+                      <StyledButton onClick={()=> console.log("Contact me")}>
                           <EmailIcon />
                           <Typography>
                            Contact me 
