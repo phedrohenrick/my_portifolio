@@ -1,7 +1,5 @@
 import styled from "@emotion/styled"
 import theme from "../../../../theme";
-import { ThreeMpTwoTone } from "@mui/icons-material";
-import thread from "../../../../components/AnimatedBackground/Thread.svg";
 
 
 
@@ -9,9 +7,9 @@ import thread from "../../../../components/AnimatedBackground/Thread.svg";
 const About = () =>{  //uma notação diferente para function 
 
 
-    const StyledAbout = styled("div")(({}) => ({
-      backgroundImage: `url(${thread})`,
-      backgroundSize: 'cover',
+    const StyledAbout = styled("div")(({theme}) => ({
+       backgroundColor: "#dfe8e8",
+       backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         height: "120vh",
@@ -30,9 +28,6 @@ const About = () =>{  //uma notação diferente para function
       <>
 
         <StyledAbout>
-          <StyledImg>
-
-          </StyledImg>
 
         </StyledAbout>
       </>
