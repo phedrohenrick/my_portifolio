@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 import theme from "../../../../theme";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import AnimatedBackground from "../../../../components/AnimatedBackground/AboutScreen.gif";
+import AnimatedBackground from "../../../../components/AnimatedBackground/AboutBackground.gif";
 
 
 
@@ -43,19 +43,20 @@ const About = () =>{  //uma notação diferente para function
       
             <Grid container spacing={2} alignItems="center">
               <Grid item xs={12} md = {5}>
-              <Typography variant="h5" color = "primary" textAlign="left"  pb={2} fontWeight= {"bold"}>Olá! sou o <Box component="span" color={'#00bc58'}>  Phedro</Box>, estudante de ciencia da computação e desenvolvedor Web.
-                 Como desenvolvedor full stack com experiência sólida na construção de APIs utilizando o Spring Framework, 
-                 com integração a bancos de dados como PostgreSQL. </Typography>
+              <Typography variant="h5" color="primary" textAlign="left" pb={2} fontWeight={"bold"}>
+                Olá! Sou o <Box component="span" color={"#E67E22"}>Phedro</Box>, estudante de Ciência da Computação.
+                Como desenvolvedor web e full stack, estou construindo uma experiência sólida na construção de APIs utilizando o <Box component="span" color={'#00bc58'}>Spring Framework</Box>, com integração a bancos de dados usando o <Box component="span" color={'#00bc58'}>PostgreSQL</Box>.
+              </Typography>
+
               </Grid>
 
               <Grid item xs={12} md = {6} >
               <Typography variant="h5" color = "primary" textAlign="left"  pb={2} fontWeight= {"bold"} >No back-end, foco em entregar soluções eficientes e escaláveis, 
-              utilizando as melhores práticas de desenvolvimento em Java.. </Typography>
+              utilizando as melhores práticas de desenvolvimento Java com spring. No front-end, concentro meus estudos em <Box component="span" color={'#00bc58'}>  Angualar e React</Box> para garantir interfaces elegantes. </Typography>
               </Grid>
               
             </Grid>
           </Container>
-
         </StyledAbout>
       </>
     )

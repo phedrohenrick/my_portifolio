@@ -58,8 +58,8 @@ const Hero = () =>{  //uma notação diferente para function
                   
                   <Grid item xs={12} md = {7} >
                     
-                      <Typography variant="h1" color = "secondary" textAlign="center"  pb={2}>Phedro Henrick</Typography>
-                      <Typography variant="h2" color = "secondary" textAlign="center" >i'm Web Developer</Typography>
+                      <Typography variant="h1" color = "secondary" textAlign="center"  pb={2} >Phedro Henrick</Typography>
+                      <Typography variant="h2" color = "secondary" textAlign="center" >i'm a Web Developer</Typography>
 
                     <Grid container display="flex" justifyContent="center" spacing={2} pt={3} marginBottom={3} >
                           <Grid item xs = {12} md={6} display= "flex" justifyContent="center">
