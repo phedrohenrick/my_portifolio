@@ -37,7 +37,7 @@ const About = () =>{  //uma notação diferente para function
     return (
       <>
 
-        <StyledAbout>
+        <StyledAbout id="sobre">
           <Container>
 
       

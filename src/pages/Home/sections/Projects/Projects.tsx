@@ -25,7 +25,7 @@ const Project = () =>{  //uma notação diferente para function
      return (
        <>
  
-         <StyledProjects>
+         <StyledProjects id="projetos">
  
          </StyledProjects>
        </>
