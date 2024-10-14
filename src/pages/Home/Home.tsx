@@ -8,7 +8,6 @@ const Home = () =>{  //uma notação diferente para function
 
     return (
       <>
-      <NavBar/>
       <Hero/>
       <About/>
       <Project/>
