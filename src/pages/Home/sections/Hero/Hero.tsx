@@ -41,9 +41,16 @@ const Hero = () =>{  //uma notação diferente para function
         width:"80%",
         borderRadius :"50%",
         border: `1px solid ${theme.palette.primary.dark}`,
+
+        [theme.breakpoints.up('xs')]: { // <= mobile
+          paddingTop: "0px"
+    
+      },
+      [theme.breakpoints.up('md')]: { // >=mobile
+          paddingTop: "0px",
+      }
   }))
-
-
+  
     return (
       <>
   
@@ -53,10 +60,9 @@ const Hero = () =>{  //uma notação diferente para function
 
                   <Grid item xs={12} md = {5}>
                     <Box position={"relative"}>
-                      <Box position={"absolute"}> 
-                      </Box>
+                    <StyledImg src= {Avatar}/>
                     </Box>
-                      <StyledImg src= {Avatar}/>
+                     
                   </Grid>
                   
                   <Grid item xs={12} md = {7} >
@@ -81,9 +87,10 @@ const Hero = () =>{  //uma notação diferente para function
                          </Typography>
                       </StyledButton>
                       </Grid>
+                      <Grid item xs = {12} md={6}  display= "flex" justifyContent="center">
+
+                      </Grid>
                     </Grid>
-
-
                   </Grid>
                 </Grid>
 
