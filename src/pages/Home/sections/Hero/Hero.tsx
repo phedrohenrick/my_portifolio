@@ -5,11 +5,14 @@ import EmailIcon from '@mui/icons-material/Email';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import AnimatedBackground from "../../../../components/AnimatedBackground/AnimatedBackground.svg";
 import theme from "../../../../theme";
-
-
+import {downloadFile} from "../../../../components/Functions/DownloadFile.tsx"
 
 const Hero = () =>{  //uma notação diferente para function 
 
+
+  const handleDownload = () => {
+    downloadFile("phedro henrick - resume.pdf");
+  } 
 
   const StyledOut = styled('body')(({}) => ({
     padding:"0",
@@ -63,15 +66,15 @@ const Hero = () =>{  //uma notação diferente para function
 
                     <Grid container display="flex" justifyContent="center" spacing={2} pt={3} marginBottom={3} >
                           <Grid item xs = {12} md={6} display= "flex" justifyContent="center">
-                              <StyledButton onClick={()=> console.log("Download")}>
-                                <DownloadIcon />
+                              <StyledButton onClick={()=> {handleDownload}}>
+                                <DownloadIcon/>
                                 <Typography>
                                     Download CV 
                                 </Typography>
                               </StyledButton>
                           </Grid>
                       <Grid item  xs = {12} md={6}  display= "flex" justifyContent="center" >
-                      <StyledButton onClick={()=> console.log("Contact me")}>
+                      <StyledButton onClick={()=> console.log("Download")}>
                           <EmailIcon />
                           <Typography>
                            Contact me 
@@ -83,6 +86,8 @@ const Hero = () =>{  //uma notação diferente para function
 
                   </Grid>
                 </Grid>
+
+              
               </Container>
           </StyledHero> 
       </>
