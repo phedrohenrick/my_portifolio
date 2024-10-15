@@ -27,7 +27,7 @@ const About = () =>{ //uma notação diferente para function
         width: "100vw",
         display: "flex",
         alignItems: "center",
-
+  
         // Media Queries para responsividade
     '@media (max-inline-size: 768px)': {
       height: '80vh',  // Ajuste menor para dispositivos móveis
@@ -40,7 +40,7 @@ const About = () =>{ //uma notação diferente para function
     
       }))
 
-      const StyledImg = styled("img")(() => ({
+ const StyledImg = styled("img")(() => ({
         width:"135%",
         borderRadius :"50%",
         margin: '-100px',
@@ -55,13 +55,13 @@ const About = () =>{ //uma notação diferente para function
         width: "100%", // Ajuste a largura para ser responsiva (100% da área disponível)
         maxWidth: "130%", // Limite o crescimento máximo
         borderRadius: "50%", // Aplicando bordas arredondadas
-        margin:"-px",
+        margin:"-100px",
 
     }
     
 
-  }))
-    
+}))
+
     
     return (
       <>
@@ -79,17 +79,17 @@ const About = () =>{ //uma notação diferente para function
                   Sobre mim
               </Typography>
             </Grid>
-      
+          
               <Grid item xs={12} md = {5}>
                 <Typography variant="h5" color="primary" textAlign="left" pb={2} fontWeight={"bold"} marginTop={"-40px"}>
-                Olá! Sou o <Box component="span" color={"#E67E22"}>Phedro</Box>, estudante de Ciência da Computação.
-                  Como desenvolvedor web e full stack, estou construindo uma experiência sólida na construção de APIs, com integração a bancos de dados.
-              </Typography>
+                  Olá! Sou o <Box component="span" color={"#E67E22"}>Phedro</Box>, estudante de Ciência da Computação.
+                  Como desenvolvedor <Box component="span" color={"#E67E22"}>web full stack</Box>, estou construindo uma experiência sólida na construção de APIs, com integração a bancos de dados.
+                </Typography>
               </Grid>
 
               <Grid item xs={12} md = {6}>
                 <Typography variant="h5" color = "primary" textAlign="left"  pb={2} fontWeight= {"bold"} marginTop={"-40px"} >No back-end, foco em entregar soluções eficientes e escaláveis, 
-                        utilizando as melhores práticas de desenvolvimento Java com spring. No front-end, concentro meus estudos em <Box component="span" color={'#E67E22'}>  Angualar e React</Box> para garantir interfaces elegantes. </Typography>
+                        utilizando as melhores práticas de desenvolvimento. No front-end, concentro meus estudos em garantir interfaces responsivas e elegantes. </Typography>
               </Grid>
               
               <Grid item xs={12} md = {4} >
@@ -137,8 +137,8 @@ const About = () =>{ //uma notação diferente para function
                       </Grid>
                       </StyledCard>
                   </Grid>
-              </Grid>
-              
+                </Grid>
+
             </Grid>
           </Container>
         </StyledAbout>
