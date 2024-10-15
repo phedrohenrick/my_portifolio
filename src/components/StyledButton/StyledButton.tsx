@@ -31,7 +31,7 @@ const StyledButton: React.FC<StyledButtonProps> = ({children, onClick}) =>{  //u
     }
     
 
-    
+
     }))
     
     return (
