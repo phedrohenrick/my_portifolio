@@ -9,7 +9,7 @@ import ProjectSlide from "../../../../components/StyledSlide.tsx/StyledSlide";
 
 const Project = () =>{  //uma notação diferente para function 
 
-    const StyledProjects = styled("div")(({theme}) => ({
+    const StyledProjects = styled("div")(({}) => ({
       backgroundImage: `url(${AnimatedBackground})`,
          backgroundSize: 'cover',
          backgroundRepeat: 'no-repeat',

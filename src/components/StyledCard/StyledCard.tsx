@@ -1,7 +1,6 @@
 import styled from "@emotion/styled"
 import { ReactNode } from "react"
 import { Card } from "@mui/material"
-import { motion } from "framer-motion";
 
 interface StyledCardSkillProps{
   children: ReactNode

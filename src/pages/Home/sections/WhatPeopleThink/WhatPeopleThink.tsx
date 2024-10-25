@@ -1,6 +1,5 @@
 
 import 'tailwindcss/tailwind.css'; // Importa os estilos do Tailwind
-import { Avatar } from "@nextui-org/react";
 import styled from '@emotion/styled';
 import { Box, Typography, Container} from '@mui/material';
 import AnimatedBackground from "../../../../assets/images/AnimatedBackground/WhatPeopleThink.png"

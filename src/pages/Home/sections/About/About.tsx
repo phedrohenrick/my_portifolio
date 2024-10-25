@@ -12,7 +12,6 @@ import postgesql from "../../../../assets/images/imageSkills/PostgreSql.png"
 import { Box, Container, Grid, Typography } from "@mui/material";
 import AnimatedBackground from "../../../../assets/images/AnimatedBackground/AboutBackground.gif";
 import StyledCard from "../../../../components/StyledCard/StyledCard"
-import { motion } from "framer-motion";
 
 
 const About = () =>{ //uma notação diferente para function 

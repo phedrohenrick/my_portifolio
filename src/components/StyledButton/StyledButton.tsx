@@ -1,8 +1,6 @@
 import styled from "@emotion/styled"
 import theme from "../../theme"
 import { ReactNode} from "react"
-import {downloadFile} from "../Functions/DownloadFile.tsx"
-import { motion } from "framer-motion";
 
 interface StyledButtonProps{
     children: ReactNode
@@ -12,10 +10,7 @@ interface StyledButtonProps{
 
 const StyledButton: React.FC<StyledButtonProps> = ({children, onClick}) =>{  //uma notação diferente para function // estudar sobre children
  
-  const handleDownload = () => {
-    downloadFile("phedro henrick - resume.pdf");
-  } 
-
+ 
 
     const StyledButton = styled("button")(() => ({
     backgroundColor: "transparent",
