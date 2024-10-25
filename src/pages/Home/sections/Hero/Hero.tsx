@@ -17,6 +17,9 @@ const Hero = () =>{  //uma notação diferente para function
   const handleDownload = () => {
     downloadFile("phedro henrick - resume.pdf");
   } 
+  const HandleClickConatact = (link: string) => {
+    window.location.href = link;
+  };
 
   const StyledHero = styled("div")(({theme}) => ({
     backgroundImage: `url(${AnimatedBackground})`,
@@ -76,7 +79,8 @@ const Hero = () =>{  //uma notação diferente para function
 
                     <Grid container display="flex" justifyContent="center" spacing={2} pt={3} marginBottom={3} >
                           <Grid item xs = {12} md={6} display= "flex" justifyContent="center">
-                              <StyledButton onClick={()=> {handleDownload}}>
+                            
+                              <StyledButton onClick={()=> {handleDownload()}}>
                                 <DownloadIcon/>
                                 <Typography>
                                     Download CV 
@@ -84,7 +88,8 @@ const Hero = () =>{  //uma notação diferente para function
                               </StyledButton>
                           </Grid>
                       <Grid item  xs = {12} md={6}  display= "flex" justifyContent="center" >
-                      <StyledButton onClick={()=> console.log("Download")}>
+                        
+                      <StyledButton onClick={() => {HandleClickConatact("#footer")}} >
                           <EmailIcon />
                           <Typography>
                            Contact me 
