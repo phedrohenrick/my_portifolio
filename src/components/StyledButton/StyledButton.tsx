@@ -2,6 +2,7 @@ import styled from "@emotion/styled"
 import theme from "../../theme"
 import { ReactNode} from "react"
 import {downloadFile} from "../Functions/DownloadFile.tsx"
+import { motion } from "framer-motion";
 
 interface StyledButtonProps{
     children: ReactNode
@@ -20,7 +21,7 @@ const StyledButton: React.FC<StyledButtonProps> = ({children, onClick}) =>{  //u
     backgroundColor: "transparent",
     border: `1px solid ${theme.palette.primary.light}`,
     borderRadius: "3px",
-    padding: "5 px",
+    padding: "5px",
     width: "100%",
     color: theme.palette.primary.light,
     display: "inline-flex",
@@ -28,7 +29,7 @@ const StyledButton: React.FC<StyledButtonProps> = ({children, onClick}) =>{  //u
     justifyContent: "center",
     '&:hover':{
       backgroundColor: theme.palette.secondary.light
-    }
+    },
     
 
 
@@ -36,7 +37,7 @@ const StyledButton: React.FC<StyledButtonProps> = ({children, onClick}) =>{  //u
     
     return (
       <>
-        <StyledButton onClick={handleDownload}>
+        <StyledButton onClick={onClick}>
             {children}
         </StyledButton>
       </>
