@@ -9,11 +9,10 @@ import fish from "../../../../assets/images/ImageBackground/fish.gif"
 import typescript from "../../../../assets/images/imageSkills/Typescript.png"
 import c from "../../../../assets/images/imageSkills/C.png"
 import postgesql from "../../../../assets/images/imageSkills/PostgreSql.png"
-
 import { Box, Container, Grid, Typography } from "@mui/material";
-import AnimatedBackground from "../../../../components/AnimatedBackground/AboutBackground.gif";
-import AnimatedBackgroundteste from "../../../../components/AnimatedBackground/ProjectScreen.gif";
+import AnimatedBackground from "../../../../assets/images/AnimatedBackground/AboutBackground.gif";
 import StyledCard from "../../../../components/StyledCard/StyledCard"
+import { motion } from "framer-motion";
 
 
 const About = () =>{ //uma notação diferente para function 
@@ -24,16 +23,19 @@ const About = () =>{ //uma notação diferente para function
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
         height: "100vh",
-        width: "100vw",
+        width: "100%",
         display: "flex",
         alignItems: "center",
+        maxwidth: "100%",
+
+
   
         // Media Queries para responsividade
-    '@media (max-inline-size: 768px)': {
+    '@media (max-width: 900px)': {
       height: '80vh',  // Ajuste menor para dispositivos móveis
     },
 
-    '@media (max-width: 480px)': {
+    '@media (max-width: 605px)': {
       height: 'auto',  // Altura menor para telas menores
     },
     
@@ -43,14 +45,17 @@ const About = () =>{ //uma notação diferente para function
  const StyledImg = styled("img")(() => ({
         width:"135%",
         borderRadius :"50%",
-        margin: '-100px',
+        margin:"-70px",
+        '@media (max-width: 615px)': {
+          margin:"-30px",  // Altura menor para telas menores
+        },
   }))
   
   const StyledImgfish = styled("img")(() => ({
 
     display: "none",
 
-   '@media (max-width: 768px)': { // Para telas com largura menor que 768px
+   '@media (max-width: 871px)': { // Para telas com largura menor que 768px
         display: "block", // Exibir em dispositivos móveis
         width: "100%", // Ajuste a largura para ser responsiva (100% da área disponível)
         maxWidth: "130%", // Limite o crescimento máximo
@@ -74,7 +79,7 @@ const About = () =>{ //uma notação diferente para function
               <StyledImgfish src= {fish}/>
               </Grid>
 
-            <Grid item xs={12} md = {6} marginTop={"-40px"} >
+            <Grid item xs={12} md = {6} >
               <Typography variant="h2" color = "primnary">
                   Sobre mim
               </Typography>
@@ -97,40 +102,41 @@ const About = () =>{ //uma notação diferente para function
                         Skills
                       </Typography>
                 </Grid>
-                <Grid container justifyContent="center">
-                  <Grid item xs={12} md={1} >
+                <Grid container justifyContent="center" marginBottom={"10px"}>
+                  <Grid item xs={12} md={6} >
                     <StyledCard >
-                      <Grid container justifyContent="center" spacing={1} alignItems="center">
-                        <Grid item xs={4} md={4}>
-                          <StyledImg src={Git} alt="Git" />
+                      <Grid container justifyContent="center"  alignItems="center">
+                        <Grid item xs={4} md={4} className="flex justify-center">
+                          <StyledImg src={Git} alt="Git" className="w-full h-auto"  />
                         </Grid>
-                        <Grid item xs={4} md={4}>
-                          <StyledImg src={Java} alt="Java" />
+                        <Grid item xs={4} md={4} className="flex justify-center">
+                          <StyledImg src={Java} alt="Java" className="w-full h-auto" />
                         </Grid>
-                        <Grid item xs={4} md={4}>
-                          <StyledImg src={Angular} alt="Angular" />
+                        <Grid item xs={4} md={4} className="flex justify-center">
+                          <StyledImg src={Angular} alt="Angular" className="w-full h-auto" />
                         </Grid>
 
 
                        
-                        <Grid item xs={4} md={4}>
-                          <StyledImg src={Spring} alt="Spring" />
+                        <Grid item xs={4} md={4} className="flex justify-center">
+                          <StyledImg src={Spring} alt="Spring" className="w-full h-auto"/>
                         </Grid>
-                        <Grid item xs={4} md={4}>
-                          <StyledImg src={React} alt="React" />
+                        <Grid item xs={4} md={4} className="flex justify-center">
+                          <StyledImg src={React} alt="React"className="w-full h-auto" />
                         </Grid>
-                        <Grid item xs={4} md={4}>
-                          <StyledImg src={Docker} alt="Docker" />
+                        <Grid item xs={4} md={4} className="flex justify-center">
+                          <StyledImg src={Docker} alt="Docker" className="w-full h-auto"/>
                         </Grid>
 
-                        <Grid item xs={4} md={4}>
-                          <StyledImg src={c} alt="c" />
+
+                        <Grid item xs={4} md={4} className="flex justify-center">
+                          <StyledImg src={c} alt="c" className="w-full h-auto"/>
                         </Grid>
-                        <Grid item xs={4} md={4}>
-                          <StyledImg src={postgesql} alt="PostgreSql" />
+                        <Grid item xs={4} md={4} className="flex justify-center" >
+                          <StyledImg src={postgesql} alt="PostgreSql" className="w-full h-auto"/>
                         </Grid>
-                        <Grid item xs={4} md={4}>
-                          <StyledImg src={typescript} alt="typescript" />
+                        <Grid item xs={4} md={4} className="flex justify-center">
+                          <StyledImg src={typescript} alt="typescript" className="w-full h-auto"/>
                         </Grid>
 
 
