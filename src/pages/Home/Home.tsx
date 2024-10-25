@@ -2,7 +2,8 @@ import NavBar from "../../components/NavBar/NavBar"
 import About from "./sections/About/About"
 import Hero from "./sections/Hero/Hero"
 import Project from "./sections/Projects/Projects"
-
+import Footer from "./sections/Footer/Footer"
+import WhatPeopleThink from "./sections/WhatPeopleThink/WhatPeopleThink"
 
 const Home = () =>{  //uma notação diferente para function 
 
@@ -11,6 +12,8 @@ const Home = () =>{  //uma notação diferente para function
       <Hero/>
       <About/>
       <Project/>
+      <WhatPeopleThink/>
+      <Footer/>
       </>
     )
   }
