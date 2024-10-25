@@ -1,24 +1,24 @@
 import styled from "@emotion/styled"
 import { ReactNode } from "react"
 import { Card } from "@mui/material"
-import CardContent from '@mui/material/CardContent';
+import { motion } from "framer-motion";
 
-interface AtyledCardSkillProps{
+interface StyledCardSkillProps{
   children: ReactNode
-
 }
 
-const AtyledCardSkill: React.FC<AtyledCardSkillProps> = ({children}) =>{  //uma notação diferente para function 
+const StyledCardSkill: React.FC<StyledCardSkillProps> = ({children}) =>{  //uma notação diferente para function 
 
 
     const StyledCard = styled(Card)(() => ({
         backgroundColor:"#d4e0e0",
-        padding: "20px",
+        padding: "10px",
         color: "#fffff",
-        borderRadius: " 40px 40px 40px 40px",
+        borderRadius: " 25px 25px 25px 25px",
         boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
         width: "600px",
         height: "200px",
+        maxwidth: "100vw",
         display: "inline-flex",
         alignItems: "center",
      
@@ -38,12 +38,12 @@ const AtyledCardSkill: React.FC<AtyledCardSkillProps> = ({children}) =>{  //uma 
 
     return (
       <>
-        <StyledCard>
+        <StyledCard className="p-50">
           {children}
         </StyledCard>
       </>
     )
   }
   
-  export default AtyledCardSkill
+  export default StyledCardSkill
   
