@@ -6,8 +6,13 @@ const NavBar = () =>{  //uma notação diferente para function
 
 
     const StyledToolBar = styled(Toolbar)(() => ({
-        display: "flex",
-        justifyContent: "space-evenly"
+      maxWidth:"100%",
+      display: "flex",
+      justifyContent: "space-evenly",
+      backgroundSize: 'cover',
+           backgroundRepeat: 'no-repeat',
+           backgroundPosition: 'center',
+           width: "100vw",
         
        
   }))
@@ -23,13 +28,13 @@ const NavBar = () =>{  //uma notação diferente para function
                 </MenuItem>
 
                 <MenuItem >
-                <Link to="projetos" smooth={true} duration={300}>
+                <Link to="projetos" smooth={true} duration={200}>
                 Projetos
                 </Link>
                 </MenuItem>
 
                 <MenuItem>
-                <Link to="sobre" smooth={true} duration={100}>
+                <Link to="footer" smooth={true} duration={100}>
                 Contato
                 </Link>
                 </MenuItem>
