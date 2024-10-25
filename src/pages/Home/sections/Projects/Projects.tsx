@@ -22,11 +22,6 @@ const Project = () =>{  //uma notação diferente para function
 
        }))
  
-       const StyledImg = styled("img")(() => ({
-         width:"90%",
-         borderRadius :"50%",
-         border: `1px solid ${theme.palette.primary.dark}`,
-   }))
 
    
      return (

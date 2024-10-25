@@ -1,4 +1,4 @@
-import { ReactNode, useState } from "react";
+import {useState } from "react";
 import {ProjectsInterface} from "../../interfaces/Projects.tsx";
 import { motion, AnimatePresence } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
