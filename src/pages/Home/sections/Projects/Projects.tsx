@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import theme from "../../../../theme";
 import AnimatedBackground from "../../../../assets/images/AnimatedBackground/ProjectScreen.png";
 import { Container, Grid, Typography } from "@mui/material";
 import ProjectSlide from "../../../../components/StyledSlide.tsx/StyledSlide";
