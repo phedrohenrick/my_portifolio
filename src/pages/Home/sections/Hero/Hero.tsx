@@ -67,7 +67,7 @@ const Hero = () =>{  //uma notação diferente para function
 
                   <Grid item xs={12} md = {5} alignItems={"center"}>
                     <Box position={"relative"}>
-                    <StyledImg src= {Avatar}/>
+                    <StyledImg src = {Avatar}/>
                     </Box>
                      
                   </Grid>
