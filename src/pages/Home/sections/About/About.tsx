@@ -1,17 +1,17 @@
 import styled from "@emotion/styled"
-import Git from "../../../../assets/images/imageSkills/Git.png"
-import Docker from "../../../../assets/images/imageSkills/Docker.png"
-import Angular from "../../../../assets/images/imageSkills/Angular.png"
-import Spring from "../../../../assets/images/imageSkills/Spring.png"
-import Java from "../../../../assets/images/imageSkills/Java.png"
-import React from "../../../../assets/images/imageSkills/React.png"
-import fish from "../../../../assets/images/ImageBackground/fish.gif"
-import typescript from "../../../../assets/images/imageSkills/Typescript.png"
-import c from "../../../../assets/images/imageSkills/C.png"
-import postgesql from "../../../../assets/images/imageSkills/PostgreSql.png"
+import Git from "portifolio/src/assets/images/ImageSkills/Git.png"
+import Docker from "portifolio/src/assets/images/ImageSkills/Docker.png"
+import Angular from "portifolio/src/assets/images/ImageSkills/Angular.png"
+import Spring from "portifolio/src/assets/images/ImageSkills/Spring.png"
+import Java from "portifolio/src/assets/images/ImageSkills/Java.png"
+import React from "portifolio/src/assets/images/ImageSkills/React.png"
+import fish from "portifolio/src/assets/images/ImageBackground/fish.gif"
+import typescript from "portifolio/src/assets/images/ImageSkills/Typescript.png"
+import c from "portifolio/src/assets/images/ImageSkills/C.png"
+import postgesql from "portifolio/src/assets/images/ImageSkills/PostgreSql.png"
 import { Box, Container, Grid, Typography } from "@mui/material";
-import AnimatedBackground from "../../../../assets/images/AnimatedBackground/AboutBackground.gif";
-import StyledCard from "../../../../components/StyledCard/StyledCard"
+import AnimatedBackground from "portifolio/src/assets/images/AnimatedBackground/AboutBackground.gif";
+import StyledCard from "portifolio/src/components/StyledCard/StyledCard"
 
 
 const About = () =>{ //uma notação diferente para function 
