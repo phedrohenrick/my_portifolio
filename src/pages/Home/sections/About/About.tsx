@@ -87,7 +87,7 @@ const About = () =>{ //uma notação diferente para function
               <Grid item xs={12} md = {5}>
                 <Typography variant="h5" color="primary" textAlign="left" pb={2} fontWeight={"bold"} marginTop={"-40px"}>
                   Olá! Sou o <Box component="span" color={"#E67E22"}>Phedro</Box>, estudante de Ciência da Computação.
-                  Como desenvolvedor <Box component="span" color={"#E67E22"}>desenvolvedor web full stack</Box>, estou construindo uma experiência sólida na construção de APIs, com integração a bancos de dados.
+                  Como <Box component="span" color={"#E67E22"}>desenvolvedor web full stack</Box>, estou construindo uma experiência sólida na construção de APIs, com integração a bancos de dados.
                 </Typography>
               </Grid>
 
