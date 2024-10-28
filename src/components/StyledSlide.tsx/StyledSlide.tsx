@@ -166,6 +166,7 @@ import { Image } from "@nextui-org/react";
                     layoutId={`image-${index}`}
                     className="relative"
                     style={{ paddingTop: "10%" }}
+                    whileHover={{ scale: 1.1 }}
                   >
                     <Image
                       alt="Project image"
