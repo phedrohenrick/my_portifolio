@@ -226,7 +226,7 @@ import { Image } from "@nextui-org/react";
                       {projectList[selectedId]?.description}
                     </motion.p>
                     <motion.p className="mt-4">
-                      <span className="font-bold">Technologies:</span>{" "}
+                      <span className="font-bold">Tecnologias:</span>{" "}
                       {projectList[selectedId]?.technologies.join(", ")}
                     </motion.p>
                     {projectList[selectedId]?.isInDevelopment && (
