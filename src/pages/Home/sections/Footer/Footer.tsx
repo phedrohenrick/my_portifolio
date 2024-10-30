@@ -24,7 +24,7 @@ const Footer = () =>{ //uma notação diferente para function
      }))
      
      const handleDownload = () => {
-      downloadFile("phedro henrick - resume.pdf");
+      downloadFile("phedrohenrick_resume.pdf");
     }
      const HandleClick = (link: string) => {
         window.location.href = link;
