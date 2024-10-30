@@ -61,6 +61,24 @@ import { Image } from "@nextui-org/react";
           ],
         isInDevelopment: false
       },   
+      {
+        title: "Cardapio Digital",
+        description: "",
+        imageUrl: "DownloadFiles/images/inDevelopment.png",
+        link: "https://github.com/phedrohenrick/Angular_webCrud",
+        technologies:[
+          "framework Angular",
+           "TypeScript", 
+           "JavaScript", 
+           "HTML", 
+           "CSS", 
+           "framework Spring",
+           "Java",
+           "JPA",
+           "postgreSQL"
+          ],
+        isInDevelopment: true
+      },   
       
     ]
  
