@@ -159,6 +159,7 @@ import { Image } from "@nextui-org/react";
             1024: {
               slidesPerView: 2.5,
             },
+        
           }}
           className="z-50 top-1/2 h-auto"
         >
@@ -169,7 +170,7 @@ import { Image } from "@nextui-org/react";
                   <motion.div
                     layoutId={`image-${index}`}
                     className="relative"
-                    style={{ paddingTop: "10%" }}
+                    style={{ padding: "3%" }}
                     whileHover={{ scale: 1.1 }}
                   >
                     <Image
@@ -189,7 +190,7 @@ import { Image } from "@nextui-org/react";
                     </div>
                   </div>
                 )}
-                <p className="font-semibold text-[85%] mt-1 md:mt-2 sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+                <p className="font-semibold text-[85%] mt-4 md:mt-2 sm:text-base md:text-lg lg:text-xl xl:text-2xl">
                   {data.title}
                 </p>
               </motion.div>
@@ -236,9 +237,9 @@ import { Image } from "@nextui-org/react";
                     {projectList[selectedId]?.isInDevelopment && (
                       <motion.p className="mt-4">In Development</motion.p>
                     )}
-                    <div className="flex justify-end gap-4">
+                    <div className="flex justify-center space-x-[-0.5rem]">
                       <motion.button
-                        className="m-5 px-5 py-2.5 bg-[#8ca0a2] text-white border-none rounded-full cursor-pointer text-base"
+                        className="m-5 px-5 py-2.5 bg-[#8ca0a2] text-white border-none rounded-full cursor-pointer text-base "
                         onClick={() => setSelectedId(null)}
                       >
                         Fechar
@@ -246,7 +247,7 @@ import { Image } from "@nextui-org/react";
                       <motion.a
                         target="_blank"
                         onClick={() => HandleClick(projectList[selectedId]?.link)}
-                        className="m-5 px-5 py-2.5 bg-[#144146] text-white border-none rounded-full cursor-pointer text-base"
+                        className="m-5 px-5 py-2.5 bg-[#E67E22] text-white border-none rounded-full cursor-pointer text-base"
                       >
                         Visite o projeto
                       </motion.a>
