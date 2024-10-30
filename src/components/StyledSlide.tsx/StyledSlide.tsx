@@ -37,7 +37,8 @@ import { Image } from "@nextui-org/react";
           "Spring Data JPA", 
          " PostgreSQL", 
          " Spring Security", 
-         " Maven"
+         " Maven",
+         "postgreSQL"
         ],
         isInDevelopment: false
       },
@@ -53,7 +54,10 @@ import { Image } from "@nextui-org/react";
            "JavaScript", 
            "HTML", 
            "CSS", 
-           "framework Spring"
+           "framework Spring",
+           "Java",
+           "JPA",
+           "postgreSQL"
           ],
         isInDevelopment: false
       },   
