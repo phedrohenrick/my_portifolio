@@ -59,7 +59,7 @@ const WhatPeopleThink = () =>{ //uma notação diferente para function
                   opacity: 1,
                   x : 50
                 }}>
-              <Typography variant="h5" color = "primary" fontWeight= "bold" textAlign="left" className="text-md sm:text-lg md:text-xl lg:text-2xl text-center sm:text-left mt-4 ">
+              <Typography variant="h5" color = "primary" fontWeight= "bold" textAlign="left" className="text-md sm:text-lg md:text-xl lg:text-2xl text-center sm:text-left mt-4 mr-16">
               Trabalhar com o Phedro foi uma experiência excelente. Mostra seu comprometimento com o aprendizado contínuo. A dedicação e a busca por aprimoramento são características marcantes, e tenho certeza de que ele continuará evoluindo em todas as áreas. É inspirador acompanhar sua trajetória!
                 </Typography >
                 </motion.div>
@@ -78,7 +78,7 @@ const WhatPeopleThink = () =>{ //uma notação diferente para function
           </Typography>
         </div>
         
-        <div className="text-md sm:w-[65%] lg:w-[55%] sm:text-lg md:text-xl lg:text-2xl text-center sm:text-right mt-4 max-w-full sm:max-w-[90%] md:max-w-[80%]">
+        <div className="text-md sm:w-[65%] lg:w-[55%] sm:text-lg md:text-xl lg:text-2xl text-center sm:text-right mt-4 max-w-full sm:max-w-[90%] md:max-w-[80%] ml-4">
         <motion.div  initial={{ opacity: 0, x: 0 }}
                 whileInView={{ 
                   opacity: 1,
