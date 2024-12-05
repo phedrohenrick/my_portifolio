@@ -65,7 +65,7 @@ import { Image } from "@nextui-org/react";
         title: "Cardapio Digital",
         description: "",
         imageUrl: "DownloadFiles/images/inDevelopment.png",
-        link: "https://github.com/phedrohenrick/Angular_webCrud",
+        link: "https://github.com/phedrohenrick",
         technologies:[
           "framework Angular",
            "TypeScript", 
@@ -78,6 +78,19 @@ import { Image } from "@nextui-org/react";
            "postgreSQL"
           ],
         isInDevelopment: true
+      },
+      {
+        title: "SistemaOBI",
+        description: "Sistema de Gerenciamento para a Olimpíada Brasileira de Informática Projeto acadêmico, com intuito de explorar as bases teóricas do paradigma orientado a objetos e as ferramentas do Java, desenvolvido para desktop com foco no gerenciamento de alunos participantes da OBI. Permite funcionalidades como cadastro, edição, exclusão e visualização de dados. Construído com integração ao banco de dados PostgreSQL, destaca-se por sua interface intuitiva e praticidade no gerenciamento de informações. Um exemplo prático de aplicação de conceitos de desenvolvimento de software e manipulação de banco de dados.",
+        imageUrl: "DownloadFiles/images/OBI.png",
+        link: "https://github.com/phedrohenrick/SistemaOBI",
+        technologies:[
+           "Java",
+           "JavaSwing",
+           "postgreSQL",
+           "MVC",
+          ],
+        isInDevelopment: false
       },   
       
     ]
