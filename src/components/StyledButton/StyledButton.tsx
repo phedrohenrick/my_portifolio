@@ -18,12 +18,13 @@ const StyledButton: React.FC<StyledButtonProps> = ({children, onClick}) =>{  //u
     borderRadius: "3px",
     padding: "5px",
     width: "100%",
-    color: theme.palette.primary.light,
+    color: "#dfe8e8",
     display: "inline-flex",
     alignItems: "center",
     justifyContent: "center",
     '&:hover':{
-      backgroundColor: theme.palette.secondary.light
+      backgroundColor: "#012c32",
+      border: `1px solid ${"#012c32"}`,
     },
     
 
