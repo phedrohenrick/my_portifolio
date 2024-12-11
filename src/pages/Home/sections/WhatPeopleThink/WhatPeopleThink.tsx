@@ -59,7 +59,7 @@ const WhatPeopleThink = () =>{ //uma notação diferente para function
                   opacity: 1,
                   x : 50
                 }}>
-              <Typography variant="h5" color = "primary" fontWeight= "bold" textAlign="left" className="text-md sm:text-lg md:text-xl lg:text-2xl text-center sm:text-left mt-4 mr-16">
+              <Typography variant="h6" color = "primary" fontWeight= "bold" textAlign="left" className="text-md sm:text-lg md:text-xl lg:text-2xl text-center sm:text-left mt-4 mr-5 ">
               Trabalhar com o Phedro foi uma experiência excelente. Mostra seu comprometimento com o aprendizado contínuo. A dedicação e a busca por aprimoramento são características marcantes, e tenho certeza de que ele continuará evoluindo em todas as áreas. É inspirador acompanhar sua trajetória!
                 </Typography >
                 </motion.div>
@@ -84,7 +84,7 @@ const WhatPeopleThink = () =>{ //uma notação diferente para function
                   opacity: 1,
                   x : -50
                 }}>
-            <Typography variant="h5" color = "primary" fontWeight= "bold" textAlign="right">
+            <Typography variant="h6" color = "primary" fontWeight= "bold" textAlign="right">
                 Phedro demonstra conhecimento técnico em diversas áreas da tecnologia, sempre abordando cada desafio com precisão e clareza. Ele está sempre em busca de novas formas de otimizar processos e superar expectativas, mostrando comprometimento e paixão pelo que faz. Sua capacidade de aprendizado contínuo e aplicação prática reflete seu empenho em alcançar a excelência em cada projeto.
             </Typography>
           </motion.div >
