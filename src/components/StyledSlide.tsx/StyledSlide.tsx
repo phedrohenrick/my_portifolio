@@ -97,8 +97,10 @@ import { Image } from "@nextui-org/react";
  
     
     const StyledSwiper = styled(Swiper)(() => ({
-       
-      minWidth  : "100%",
+      
+      //width:"1500px",
+      maxWidth : "100%",
+      maxHeight: "100%",
       height: "100%",
       padding: "20px",
       backgroundColor: "#eef7f7", // cor de fundo do swiper
@@ -108,7 +110,7 @@ import { Image } from "@nextui-org/react";
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#dfe8e8", // cor de fundo do slide
-        borderRadius: "25px", // arredondar os cantos do slide
+        borderRadius: "5px", // arredondar os cantos do slide
         boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)", // sombra do slide
        
       },
@@ -188,11 +190,14 @@ import { Image } from "@nextui-org/react";
           loop={true}
           breakpoints={{
             1024: {
-              slidesPerView: 2.5,
+              slidesPerView: 2.1,
+            },
+            300: {
+              slidesPerView: 1.1,
             },
         
           }}
-          className="z-50 top-1/2 h-auto"
+          className="z-50 top-1/2 h-120"
         >
           {projectList.map((data, index) => (
             <SwiperSlide key={index} onClick={() => setSelectedId(index)}>
