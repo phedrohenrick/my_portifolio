@@ -74,9 +74,9 @@ const About = () => { //uma notação diferente para function
         <Container>
           <Grid container spacing={2} alignItems="center" gap={"40px"} >
 
-            <Grid item xs={10}>
+            {/* <Grid item xs={10}>
               <StyledImgfish src={fish} />
-            </Grid>
+            </Grid> */}
 
             <Grid item xs={12} md={6} >
               <Typography variant="h2" color="primnary">

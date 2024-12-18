@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 import AnimatedBackground from "../../../../assets/images/AnimatedBackground/Footer.svg";
 import { Container, Grid, IconButton, Typography } from "@mui/material";
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneIcon from '@mui/icons-material/Phone';
+//import EmailIcon from '@mui/icons-material/Email';
+//import PhoneIcon from '@mui/icons-material/Phone';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 import { downloadFile } from "../../../../components/Functions/DownloadFile";
