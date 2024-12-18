@@ -16,7 +16,7 @@ const Hero = () =>{  //uma notação diferente para function
 
 
   const handleDownload = () => {
-    downloadFile("Meu_curriculo.pdf");
+    downloadFile("meu_curriculo_.pdf");
   } 
   const HandleClickConatact = (link: string) => {
     window.location.href = link;

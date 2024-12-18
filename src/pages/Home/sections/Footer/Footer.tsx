@@ -20,11 +20,10 @@ const Footer = () =>{ //uma notação diferente para function
        display: "flex",
        alignItems: "center",
        marginTop: "-10vh", // Subir a seção, diminuindo a altura da parte superior
-       
      }))
      
      const handleDownload = () => {
-      downloadFile("Meu_curriculo.pdf");
+      downloadFile("meu_curriculo_.pdf");
     }
      const HandleClick = (link: string) => {
         window.location.href = link;
@@ -48,9 +47,9 @@ const Footer = () =>{ //uma notação diferente para function
                       >
                         
                           <IconButton onClick={handleDownload} >                 
-                            <Typography variant="h5" color="primary" fontWeight="bold" style={{ textDecoration: 'underline', cursor: 'pointer',}}>
+                            <Typography variant="h6" color="primary" fontWeight="bold" style={{ textDecoration: 'underline', cursor: 'pointer',}} paddingTop = {"20px"}>
                               Download CV
-                              <DownloadForOfflineIcon color= "primary" sx={{ fontSize: 100, ml: 2 }} />
+                              <DownloadForOfflineIcon color= "primary" sx={{ fontSize: 80, ml: 2 }} />
 
                             </Typography>
                           </IconButton>
@@ -66,9 +65,9 @@ const Footer = () =>{ //uma notação diferente para function
                           justifyContent="flex-start" 
                           alignItems="flex-end"
                           >
-                          <Typography variant="h5" color="secondary" pb={2} fontWeight="bold" >
+                          <Typography variant="h6" color="secondary" pb={2} fontWeight="bold" >
                             (62) 998506064
-                            <PhoneIcon sx={{ fontSize: 30, ml: 2 }} />
+                            
                           </Typography> 
                          
 
@@ -82,10 +81,10 @@ const Footer = () =>{ //uma notação diferente para function
                         alignItems="flex-end"
                       >
                       
-                          <Typography variant="h5" color="secondary" pb={2} fontWeight="bold">
+                          <Typography variant="h6" color="secondary" pb={2} fontWeight="bold">
                           
                             phedrohenrickdasilva@gmail.com
-                            <EmailIcon sx={{ fontSize: 30, ml: 2 }} />
+                            
                           </Typography>
                       </Grid>
                       <Grid 
