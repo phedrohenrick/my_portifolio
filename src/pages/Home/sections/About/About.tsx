@@ -50,21 +50,21 @@ const About = () => { //uma notação diferente para function
     },
   }))
 
-  const StyledImgfish = styled("img")(() => ({
+  // const StyledImgfish = styled("img")(() => ({
 
-    display: "none",
+  //   display: "none",
 
-    '@media (max-width: 871px)': { // Para telas com largura menor que 768px
-      display: "block", // Exibir em dispositivos móveis
-      width: "100%", // Ajuste a largura para ser responsiva (100% da área disponível)
-      maxWidth: "130%", // Limite o crescimento máximo
-      borderRadius: "50%", // Aplicando bordas arredondadas
-      margin: "-100px",
+  //   '@media (max-width: 871px)': { // Para telas com largura menor que 768px
+  //     display: "block", // Exibir em dispositivos móveis
+  //     width: "100%", // Ajuste a largura para ser responsiva (100% da área disponível)
+  //     maxWidth: "130%", // Limite o crescimento máximo
+  //     borderRadius: "50%", // Aplicando bordas arredondadas
+  //     margin: "-100px",
 
-    }
+  //   }
 
 
-  }))
+  // }))
 
 
   return (
