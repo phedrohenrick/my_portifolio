@@ -116,61 +116,6 @@ import { Image } from "@nextui-org/react";
       },
     }))
 
-  
-
-    // const SlideCardStyled = styled(motion.div)(() => ({
-    //   display: "flex",
-    //   flexDirection: "column",
-    //   justifyContent: "center",
-    //   alignItems: "center",
-    //   padding: '20px',
-    //   borderRadius: "15px",
-    //   width: "500px", // Define uma largura padrão para os slides
-    //   height: "350px", // Define uma altura padrão para os slides
-    //   cursor: "pointer",
-    //   transition: "transform 0.3s ease", // Suave ao passar o mouse
-    //   objectFit: "cover",
-      
-      
-
-    //   ".slide-image": {
-    //     width: "175%",           // Imagem ocupa a largura total do slide
-    //     height: "60%",          // Define uma altura fixa para a imagem
-    //     borderRadius: "20px",     // Arredonda os cantos da imagem
-    //     objectFit: "cover",       // Garante que a imagem cubra o espaço corretamente
-    //     marginBottom: "-10px",     // Espaçamento entre a imagem e o título
-    //     paddingTop: "20px",
-    //     "@media (max-width: 1024px)": {
-    //       width: "125%",      // Reduz a largura da imagem para telas menores
-    //       height: "60%",    // Mantém a altura proporcional
-          
-    //     },"@media (max-width: 259px)": {
-    //       width: "105%",      // Reduz a largura da imagem para telas menores
-    //       height: "60%",    // Mantém a altura proporcional
-          
-          
-    //     },"@media (max-width: 818px)": {
-    //       width: "120%",      // Reduz a largura da imagem para telas menores
-    //       height: "80%",    // Mantém a altura proporcional
-          
-    //     },
-        
-    //   },
-    
-    //   ".slide-title": {
-    //     fontSize: "1.5 rem",       // Tamanho da fonte do título
-    //     fontWeight: "600",
-    //     color: "#333",            // Cor do título
-    //     textAlign: "center",      // Centraliza o título
-    //     marginBottom: "5px",      // Espaçamento inferior do título
-    //   },
-      
-    
-    //   "&:hover": {
-    //     transform: "scale(1.025)", // Efeito de zoom ao passar o mouse
-    //   },
-    // }));
-
     const HandleClick = (link: string) => {
         window.location.href = link;
     };
@@ -204,10 +149,12 @@ import { Image } from "@nextui-org/react";
               <motion.div layoutId={`card-${index}`} className="relative">
                 {data.imageUrl ? (
                   <motion.div
-                    layoutId={`image-${index}`}
-                    className="relative"
-                    style={{ padding: "3%" }}
-                    whileHover={{ scale: 1.1 }}
+
+                  layoutId={`image-${index}`}
+                  className = "relative"
+                  style = {{padding : "3%"}}
+                  whileHover={{scale:1.1}}
+
                   >
                     <Image
                       alt="Project image"

@@ -54,11 +54,12 @@ const WhatPeopleThink = () =>{ //uma notação diferente para function
              <Box component="span" color={"#E67E22"}>Rafael Xavier</Box> - Analista de Redes
                 </Typography>
               </div>
-              <motion.div  initial={{ opacity: 0, x: 0 }}
-                whileInView={{ 
-                  opacity: 1,
-                  x : 50
-                }}>
+              <motion.div 
+              initial={{ opacity: 0, x: 0 }}
+              whileInView={{ 
+                opacity: 1,
+                x : 50
+              }}>
               <Typography variant="h6" color = "primary" fontWeight= "bold" textAlign="left" className="text-md sm:text-lg md:text-xl lg:text-2xl text-center sm:text-left mt-4 mr-5 ">
               Trabalhar com o Phedro foi uma experiência excelente. Mostra seu comprometimento com o aprendizado contínuo. A dedicação e a busca por aprimoramento são características marcantes, e tenho certeza de que ele continuará evoluindo em todas as áreas. É inspirador acompanhar sua trajetória!
                 </Typography >

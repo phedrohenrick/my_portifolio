@@ -50,21 +50,7 @@ const About = () => { //uma notação diferente para function
     },
   }))
 
-  // const StyledImgfish = styled("img")(() => ({
-
-  //   display: "none",
-
-  //   '@media (max-width: 871px)': { // Para telas com largura menor que 768px
-  //     display: "block", // Exibir em dispositivos móveis
-  //     width: "100%", // Ajuste a largura para ser responsiva (100% da área disponível)
-  //     maxWidth: "130%", // Limite o crescimento máximo
-  //     borderRadius: "50%", // Aplicando bordas arredondadas
-  //     margin: "-100px",
-
-  //   }
-
-
-  // }))
+  
 
 
   return (
@@ -74,9 +60,8 @@ const About = () => { //uma notação diferente para function
         <Container>
           <Grid container spacing={2} alignItems="center" gap={"40px"} >
 
-            {/* <Grid item xs={10}>
-              <StyledImgfish src={fish} />
-            </Grid> */}
+            
+            
 
             <Grid item xs={12} md={6} >
               <Typography variant="h2" color="primnary">
