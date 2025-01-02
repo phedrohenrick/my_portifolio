@@ -105,7 +105,7 @@ const Hero = () =>{  //uma notação diferente para function
 
           <Container>
               
-              <Grid container spacing={4}>
+              <Grid container spacing={4} > 
                 <Grid  item
                     xs={12}
                     md={12}
@@ -145,8 +145,8 @@ const Hero = () =>{  //uma notação diferente para function
                 y : 50
               }}>
 
-              <Grid container spacing={4} >
-                  <Grid item xs={12} md = {5} justifyItems="center">
+              <Grid container spacing={4} justifyContent="center"  alignItems="center" >
+                  <Grid item xs={12} md = {5} style={{ textAlign: 'center' }} className="relative">
                     <Box className="relative z-0 w-48 top-[15%] sm:w-72 md:w-60 xl:w-72 ">
                     <StyledImg src = {Avatar}/>
                     </Box>   
