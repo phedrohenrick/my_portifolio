@@ -146,8 +146,8 @@ const Hero = () =>{  //uma notação diferente para function
               }}>
 
               <Grid container spacing={4} >
-                  <Grid item xs={12} md = {5} >
-                    <Box className="relative  justify-self-center z-0 w-48 top-[15%] sm:w-72 md:w-60 xl:w-72 ">
+                  <Grid item xs={12} md = {5} justifyItems="center">
+                    <Box className="relative z-0 w-48 top-[15%] sm:w-72 md:w-60 xl:w-72 ">
                     <StyledImg src = {Avatar}/>
                     </Box>   
                   </Grid>
