@@ -33,10 +33,7 @@ const Project = () =>{  //uma notação diferente para function
               <Grid container spacing={2} alignItems="center" >
                   <Grid item xs={12} md = {12} fontWeight={"bold"} >
                       <Typography variant="h2" color = "primnary" fontWeight={"bold"}>
-                      <Trans
-                       i18nKey="title_p" 
-                      components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
-                        />
+                      {t("title_p")}
                       </Typography>
                   </Grid>
 

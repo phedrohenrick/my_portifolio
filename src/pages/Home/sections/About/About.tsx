@@ -16,7 +16,7 @@ import { Trans, useTranslation } from 'react-i18next'
 
 const About = () => { //uma notação diferente para function 
 
-  const {t} = useTranslation();
+const {t} = useTranslation();
   
   const StyledAbout = styled("div")(({ }) => ({
     backgroundImage: `url(${AnimatedBackground})`,
@@ -62,10 +62,7 @@ const About = () => { //uma notação diferente para function
                 text-center">
               <Typography variant="h2" color="primnary" >
 
-              <Trans 
-              i18nKey="aboutMe" 
-              components={{ 1: <span color = "white"/>}} 
-              />
+              {t("aboutMe")}
 
               </Typography>
 
@@ -151,7 +148,5 @@ const About = () => { //uma notação diferente para function
 }
 
 export default About
-function useTranslatin(): { t: any } {
-  throw new Error("Function not implemented.")
-}
+
 

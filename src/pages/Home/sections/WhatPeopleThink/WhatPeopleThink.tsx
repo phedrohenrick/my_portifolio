@@ -1,7 +1,7 @@
 
 import 'tailwindcss/tailwind.css'; // Importa os estilos do Tailwind
 import styled from '@emotion/styled';
-import { Box, Typography, Container} from '@mui/material';
+import {Typography, Container} from '@mui/material';
 import AnimatedBackground from "../../../../assets/images/AnimatedBackground/WhatPeopleThink.png"
 import { motion } from 'framer-motion';
 import rafa from "../../../../assets/images/rafa.jpg";
@@ -45,10 +45,7 @@ const WhatPeopleThink = () =>{ //uma notação diferente para function
      <Container>
         <section className="h-auto w-full mt-28 sm:mt-40 md:mt-60  text-black relative">
             <Typography variant="h3" color = "primnary" fontWeight={"bold"} className="flex justify-center items-center text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold z-10">
-            <Trans
-             i18nKey="title_wpt" 
-            components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
-         />
+            {t("title_wpt")}
             </Typography>
             <div className="flex flex-col items-center justify-center p-8 sm:p-0 sm:items-start w-full sm:w-[65%] lg:w-[55%] mt-10 lg:mt-14 sm:ml-[10%]">
               <div className="flex items-center gap-2">

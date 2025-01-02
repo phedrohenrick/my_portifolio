@@ -105,10 +105,7 @@ const {t} = useTranslation();
                           <Typography variant="h5" color="secondary" pb={2} fontWeight="bold" >
                            
                             <a onClick={()=>HandleClick("https://wa.me/5562998506064")} target="_blank"  style={{ textDecoration: 'underline', cursor: 'pointer'}} >
-                            <Trans
-                                i18nKey="message" 
-                              components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
-                              />
+                            {t("message")}
                             </a>
                             <WhatsAppIcon sx={{ fontSize: 30, ml: 2 }} />
                           </Typography>

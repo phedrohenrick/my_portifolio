@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { styled } from "@mui/material";
 import "swiper/swiper-bundle.css";
 import { Image } from "@nextui-org/react";
-import { Trans, useTranslation } from 'react-i18next';
+import { Trans } from 'react-i18next';
 import { t } from "i18next";
 
 
