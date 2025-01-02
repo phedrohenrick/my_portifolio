@@ -12,7 +12,7 @@ let theme = createTheme({
     },
 
     typography: {
-        fontFamily: "segoe UI",
+        fontFamily: '"Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif',
       
     },
   });
