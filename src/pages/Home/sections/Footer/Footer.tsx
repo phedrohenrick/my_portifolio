@@ -6,9 +6,13 @@ import { Container, Grid, IconButton, Typography } from "@mui/material";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 import { downloadFile } from "../../../../components/Functions/DownloadFile";
+import { Trans, useTranslation } from 'react-i18next'
 
 
 const Footer = () =>{ //uma notação diferente para function 
+
+const {t} = useTranslation();
+  
   const StyledFooter = styled("div")(({}) => ({
     backgroundImage: `url(${AnimatedBackground})`,
        backgroundSize: 'cover',
@@ -48,7 +52,10 @@ const Footer = () =>{ //uma notação diferente para function
                         
                           <IconButton onClick={handleDownload} >                 
                             <Typography variant="h6" color="primary" fontWeight="bold" style={{ textDecoration: 'underline', cursor: 'pointer',}} paddingTop = {"20px"}>
-                              Download CV
+                            <Trans
+                                i18nKey="btnCv" 
+                              components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
+                              />
                               <DownloadForOfflineIcon color= "primary" sx={{ fontSize: 80, ml: 2 }} />
 
                             </Typography>
@@ -66,7 +73,7 @@ const Footer = () =>{ //uma notação diferente para function
                           alignItems="flex-end"
                           >
                           <Typography variant="h6" color="secondary" pb={2} fontWeight="bold" >
-                            (62) 998506064
+                            +55 (62) 998506064
                             
                           </Typography> 
                          
@@ -97,7 +104,12 @@ const Footer = () =>{ //uma notação diferente para function
                       >
                           <Typography variant="h5" color="secondary" pb={2} fontWeight="bold" >
                            
-                            <a onClick={()=>HandleClick("https://wa.me/5562998506064")} target="_blank"  style={{ textDecoration: 'underline', cursor: 'pointer'}} > Mande-me uma mensagem</a>
+                            <a onClick={()=>HandleClick("https://wa.me/5562998506064")} target="_blank"  style={{ textDecoration: 'underline', cursor: 'pointer'}} >
+                            <Trans
+                                i18nKey="message" 
+                              components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
+                              />
+                            </a>
                             <WhatsAppIcon sx={{ fontSize: 30, ml: 2 }} />
                           </Typography>
                       </Grid>

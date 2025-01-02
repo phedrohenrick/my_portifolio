@@ -1,6 +1,8 @@
+import { ReactNode } from "react";
+
 export interface ProjectsInterface{
-    title: string,
-    description: string,
+    title: ReactNode,
+    description: ReactNode,
     imageUrl: string,
     link: string,
     technologies: string[],

@@ -11,13 +11,29 @@ import theme from "../../../../theme";
 import {downloadFile} from "../../../../components/Functions/DownloadFile.tsx"
 import { IconButton } from '@mui/material';
 import { motion } from "framer-motion";
+import { Trans, useTranslation } from 'react-i18next'
+import { useState } from "react";
+
 
 const Hero = () =>{  //uma notação diferente para function 
 
+  const {
+    t, 
+    i18n : {changeLanguage, language}
+  } = useTranslation()
+
+  const [currentLanguage, setCurrentLanguage] = useState(language)
+
+  const handleChangeLanguage = () => {
+    const newLanguage = currentLanguage === 'en' ? 'pt' : 'en'
+    changeLanguage(newLanguage)
+    setCurrentLanguage(newLanguage)
+
+  }
 
   const handleDownload = () => {
     downloadFile("meu_curriculo_.pdf");
-  } 
+  };
   const HandleClickConatact = (link: string) => {
     window.location.href = link;
   };
@@ -61,12 +77,67 @@ const Hero = () =>{  //uma notação diferente para function
  
     return (
       <>
-      <StyledHero>
-          <Container >
-              <Grid container spacing={6}  >
+      
+      <StyledHero  className="
+                flex
+                items-center
+                justify-center
+                bg-cover 
+                bg-no-repeat 
+                bg-center 
+                sm:bg-top 
+                md:bg-center 
+                lg:bg-bottom 
+                h-[120vh] 
+                w-full
+                pt-12
+            ">
 
-                  <Grid item xs={12} md = {5} alignItems={"center"}>
-                    <Box position={"relative"}>
+          <Container>
+              
+              <Grid container spacing={4}>
+                <Grid  item
+                    xs={12}
+                    md={12}
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      right: 0,
+                      margin: '2rem',
+                      marginBottom: "100px"
+                    }}>
+                  <button  onClick={() => handleChangeLanguage()} 
+                   className="
+                  
+                   pt-2
+                  text-white
+                  cursor-pointer
+                  bg-inherit
+                  border-transparent
+                  z-10
+                  xl: text-xl
+                  sm: text-sm
+                 " >
+                  
+                  <Trans
+                  i18nKey="btnChangeLanguage" 
+                 components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
+                 />
+
+                  </button>
+                </Grid>
+              </Grid>
+
+              <motion.div 
+              initial={{ opacity: 0, x: 0 }}
+              whileInView={{ 
+                opacity: 1,
+                y : 50
+              }}>
+
+              <Grid container spacing={4}  >
+                  <Grid item xs={12} md = {5} >
+                    <Box className="relative justify-self-center z-0 w-48 left-2 top-[15%] sm:w-72 md:w-60 xl:w-72 ">
                     <StyledImg src = {Avatar}/>
                     </Box>
                      
@@ -83,7 +154,7 @@ const Hero = () =>{  //uma notação diferente para function
                               <StyledButton onClick={()=> {handleDownload()}}>
                                 <DownloadIcon/>
                                 <Typography>
-                                    Download do Currículo 
+                                    {t('btnCv')}
                                 </Typography>
                               </StyledButton>
                            
@@ -93,7 +164,7 @@ const Hero = () =>{  //uma notação diferente para function
                       <StyledButton onClick={() => {HandleClickConatact("#footer")}} >
                           <EmailIcon />
                           <Typography>
-                           Me contate 
+                          {t('btnContact')}
                          </Typography>
                       </StyledButton>
                       </Grid>

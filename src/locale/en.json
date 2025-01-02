@@ -1,0 +1,45 @@
+{
+    "translation":{
+        "navBarAbout": "About",
+        "navBarProjects": "Projects",
+        "navBarContact": "Contact", 
+        "title": "FullStack Developer",
+        "btnChangeLanguage": "PT|<1>EN</1>",
+        "btnCv": "Download CV",
+        "btnContact": "Contact",
+
+        "aboutMe": "About Me",
+        "skills": "Skills",
+        "tx1": "Hello! I'm <1>Phedro</1>, a <1>web developer</1> passionate about technology and innovation. I am always seeking to learn new tools and methodologies to deliver modern, responsive, and optimized applications.",
+        "tx2": "On the <1>back end</1>, I focus on delivering efficient and scalable solutions, using the best development practices. On the <1>front end</1>, I concentrate my efforts on ensuring responsive and elegant interfaces.",
+
+        "title_p": "Projects",
+        "title_p1": "My Portfolio",
+        "desc_p1": "This portfolio is a static application developed in React to showcase my projects and skills as a full-stack developer. With smooth navigation using anchors and a modern, responsive design, the site aims to provide a clear and objective view of my technical competencies and achievements in personal and professional projects.",
+        "technology": "Technologies:",
+    
+        "title_p2": "Spring Rest API",
+        "desc_p2": "This project consists of a RESTful API developed with Spring Boot, providing CRUD (Create, Read, Update, Delete) operations for resource management. The API is designed to be scalable, easy to maintain, and efficient, utilizing the best practices in backend development.",
+    
+        "title_p3": "Inventory",
+        "desc_p3": "This is a frontend application developed in Angular, aimed at controlling and monitoring inventories. The interface allows for intuitive and efficient management of inventory items. The application includes a dedicated screen for product management, enabling users to add, edit, view, and delete items, making real-time inventory tracking easier.",
+    
+        "title_p4": "Digital Menu",
+        "desc_p4": "This project is under development.",
+    
+        "title_p5": "OBI System",
+        "desc_p5": "Management System for the Brazilian Olympiad in Informatics. An academic project aimed at exploring the theoretical foundations of the object-oriented paradigm and Java tools, developed for desktop use with a focus on managing students participating in the OBI. It provides functionalities such as registration, editing, deletion, and viewing of data. Built with PostgreSQL database integration, it stands out for its intuitive interface and practicality in managing information. A practical example of applying software development concepts and database manipulation.",
+    
+        "btnClose": "Close",
+        "btnOpen_p": "Visit the project",
+    
+        "title_wpt": "What do people think about me?",
+        "personal_title_Rafa": "<1>Rafael Xavier</1> - Network Analyst",
+        "personal_review_R": "Working with Phedro was an excellent experience. He demonstrates commitment to continuous learning. His dedication and pursuit of improvement are remarkable traits, and I am sure he will keep evolving in all areas. It is inspiring to follow his journey!",
+        "personal_title_Adriano": "<1>Adriano Aparecido</1> - Industrial Automation",
+        "personal_review_A": "Phedro demonstrates technical knowledge in various areas of technology, always approaching each challenge with precision and clarity. He is constantly seeking new ways to optimize processes and exceed expectations, showcasing commitment and passion for what he does. His ability for continuous learning and practical application reflects his drive to achieve excellence in every project.",
+    
+        "message": "Send me a message"
+    
+    }
+}

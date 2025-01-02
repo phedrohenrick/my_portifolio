@@ -5,14 +5,26 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { styled } from "@mui/material";
 import "swiper/swiper-bundle.css";
 import { Image } from "@nextui-org/react";
+import { Trans, useTranslation } from 'react-i18next';
+import { t } from "i18next";
 
 
 
     const projectList: ProjectsInterface[] = [
 
       {
-          title: " Meu portifolio",
-          description: "Este portfólio é uma aplicação estática desenvolvida em React para exibir meus projetos e habilidades como desenvolvedor full stack. Com uma navegação fluida por meio de âncoras e um design moderno e responsivo, o site tem como objetivo fornecer uma visão clara e objetiva das minhas competências técnicas e realizações em projetos pessoais e profissionais.",
+          title:  
+          <Trans
+          i18nKey="title_p1" 
+         components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
+         />
+         ,
+          description: 
+          <Trans
+          i18nKey="desc_p1" 
+         components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
+         />
+         ,
           imageUrl: "DownloadFiles/images/portifolio.png",
           link: "https://github.com/phedrohenrick/phedrohenrick-My_portifolio",
           technologies: [
@@ -28,8 +40,14 @@ import { Image } from "@nextui-org/react";
       },
 
       {
-        title: "Spring Rest Api",
-        description: "Este projeto consiste em uma API RESTful desenvolvida com Spring Boot, oferecendo operações CRUD (Create, Read, Update, Delete) para o gerenciamento de recursos. A API foi projetada para ser escalável, de fácil manutenção e com foco na eficiência, utilizando as melhores práticas de desenvolvimento backend.",
+        title: <Trans
+        i18nKey="title_p2" 
+       components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
+       />,
+        description: <Trans
+        i18nKey="desc_p2" 
+       components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
+       />,
         imageUrl: "DownloadFiles/images/api.png",
         link: "https://github.com/phedrohenrick/Spring_webCrude",
         technologies: [
@@ -44,8 +62,14 @@ import { Image } from "@nextui-org/react";
       },
 
       {
-        title: "Estoque",
-        description: "é uma aplicação frontend desenvolvida em Angular, voltada para o controle e monitoramento de estoques. A interface permite visualizar e gerenciar os itens de um inventário de forma intuitiva e eficiente. A aplicação conta com uma tela dedicada ao gerenciamento de produtos, onde é possível adicionar, editar, visualizar e remover itens, facilitando o acompanhamento do estoque em tempo real.",
+        title: <Trans
+        i18nKey="title_p3" 
+       components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
+       />,
+        description: <Trans
+        i18nKey="desc_p3" 
+       components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
+       />,
         imageUrl: "DownloadFiles/images/dashboard.png",
         link: "https://github.com/phedrohenrick/Angular_webCrud",
         technologies:[
@@ -62,7 +86,10 @@ import { Image } from "@nextui-org/react";
         isInDevelopment: false
       },   
       {
-        title: "Cardapio Digital",
+        title: <Trans
+        i18nKey="title_p4" 
+       components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
+       />,
         description: "",
         imageUrl: "DownloadFiles/images/inDevelopment.png",
         link: "https://github.com/phedrohenrick",
@@ -80,8 +107,14 @@ import { Image } from "@nextui-org/react";
         isInDevelopment: true
       },
       {
-        title: "SistemaOBI",
-        description: "Sistema de Gerenciamento para a Olimpíada Brasileira de Informática Projeto acadêmico, com intuito de explorar as bases teóricas do paradigma orientado a objetos e as ferramentas do Java, desenvolvido para desktop com foco no gerenciamento de alunos participantes da OBI. Permite funcionalidades como cadastro, edição, exclusão e visualização de dados. Construído com integração ao banco de dados PostgreSQL, destaca-se por sua interface intuitiva e praticidade no gerenciamento de informações. Um exemplo prático de aplicação de conceitos de desenvolvimento de software e manipulação de banco de dados.",
+        title: <Trans
+        i18nKey="title_p5" 
+       components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
+       />,
+        description: <Trans
+        i18nKey="desc_p5" 
+       components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
+       />,
         imageUrl: "DownloadFiles/images/OBI.png",
         link: "https://github.com/phedrohenrick/SistemaOBI",
         technologies:[
@@ -214,7 +247,7 @@ import { Image } from "@nextui-org/react";
                       {projectList[selectedId]?.description}
                     </motion.p>
                     <motion.p className="mt-4">
-                      <span className="font-bold">Tecnologias:</span>{" "}
+                      <span className="font-bold">{t("technology")}</span>{" "}
                       {projectList[selectedId]?.technologies.join(", ")}
                     </motion.p>
                     {projectList[selectedId]?.isInDevelopment && (
@@ -225,14 +258,14 @@ import { Image } from "@nextui-org/react";
                         className="m-5 px-5 py-2.5 bg-[#8ca0a2] text-white border-none rounded-full cursor-pointer text-base "
                         onClick={() => setSelectedId(null)}
                       >
-                        Fechar
+                        {t("btnClose")}
                       </motion.button>
                       <motion.a
                         target="_blank"
                         onClick={() => HandleClick(projectList[selectedId]?.link)}
                         className="m-5 px-5 py-2.5 bg-[#E67E22] text-white border-none rounded-full cursor-pointer text-base"
                       >
-                        Visite o projeto
+                       {t("btnOpen_p")}
                       </motion.a>
                     </div>
                   </div>

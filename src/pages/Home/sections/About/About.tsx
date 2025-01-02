@@ -5,40 +5,22 @@ import Angular from "portifolio/src/assets/images/ImageSkills/Angular.png"
 import Spring from "portifolio/src/assets/images/ImageSkills/Spring.png"
 import Java from "portifolio/src/assets/images/ImageSkills/Java.png"
 import React from "portifolio/src/assets/images/ImageSkills/React.png"
-//import fish from "portifolio/src/assets/images/ImageBackground/fish.gif"
 import typescript from "portifolio/src/assets/images/ImageSkills/Typescript.png"
 import c from "portifolio/src/assets/images/ImageSkills/C.png"
 import postgesql from "portifolio/src/assets/images/ImageSkills/PostgreSql.png"
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 import AnimatedBackground from "portifolio/src/assets/images/AnimatedBackground/AboutBackground.gif";
 import StyledCard from "portifolio/src/components/StyledCard/StyledCard"
+import { Trans, useTranslation } from 'react-i18next'
 
 
 const About = () => { //uma notação diferente para function 
 
+  const {t} = useTranslation();
+  
   const StyledAbout = styled("div")(({ }) => ({
     backgroundImage: `url(${AnimatedBackground})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-    height: "100vh",
-    width: "100%",
-    display: "flex",
-    alignItems: "center",
-    maxwidth: "100%",
-
-
-
-    // Media Queries para responsividade
-    '@media (max-width: 900px)': {
-      height: '80vh',  // Ajuste menor para dispositivos móveis
-    },
-
-    '@media (max-width: 605px)': {
-      height: 'auto',  // Altura menor para telas menores
-    },
-
-
+    
   }))
 
   const StyledImg = styled("img")(() => ({
@@ -56,34 +38,66 @@ const About = () => { //uma notação diferente para function
   return (
     <>
 
-      <StyledAbout id="sobre">
+      <StyledAbout id="sobre" className="
+                flex
+                items-top
+                justify-center
+                bg-cover 
+                bg-no-repeat 
+                bg-center 
+                sm:bg-top 
+                md:bg-center 
+                lg:bg-bottom 
+                h-[120vh] 
+                w-full
+                pt-12">
         <Container>
           <Grid container spacing={2} alignItems="center" gap={"40px"} >
 
-            
-            
+            <Grid item xs={12} md={6} className=" 
+                p-4 
+                sm:p-6 
+                md:p-8 
+                h-auto 
+                text-center">
+              <Typography variant="h2" color="primnary" >
 
-            <Grid item xs={12} md={6} >
-              <Typography variant="h2" color="primnary">
-                Sobre mim
+              <Trans 
+              i18nKey="aboutMe" 
+              components={{ 1: <span color = "white"/>}} 
+              />
+
               </Typography>
+
             </Grid>
 
             <Grid item xs={12} md={5}>
               <Typography variant="h5" color="primary" textAlign="left" pb={2} fontWeight={"bold"} marginTop={"-40px"}>
-                Olá! Sou o <Box component="span" color={"#E67E22"}>Phedro</Box>, estudante de Ciência da Computação.
-                Como <Box component="span" color={"#E67E22"}>desenvolvedor web full stack</Box>, estou construindo uma experiência sólida na construção de APIs, com integração a bancos de dados.
-              </Typography>
+
+              <Trans
+               i18nKey="tx1" 
+              components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
+              />
+
+                </Typography>
             </Grid>
 
             <Grid item xs={12} md={6}>
-              <Typography variant="h5" color="primary" textAlign="left" pb={2} fontWeight={"bold"} marginTop={"-40px"} >No back-end, foco em entregar soluções eficientes e escaláveis,
-                utilizando as melhores práticas de desenvolvimento. No front-end, concentro meus estudos em garantir interfaces responsivas e elegantes. </Typography>
+              <Typography variant="h5" color="primary" textAlign="left" pb={2} fontWeight={"bold"} marginTop={"-40px"} > 
+              <Trans
+               i18nKey="tx2" 
+              components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
+              />
+
+                 </Typography>
             </Grid>
 
             <Grid item xs={12} md={4} >
-              <Typography variant="h2" color="primnary">
-                Skills
+              <Typography variant="h2" color="primary" >
+              <Trans 
+              i18nKey="skills" 
+              components={{ 1: <span color = "white"/>}} 
+              />
               </Typography>
             </Grid>
             <Grid container justifyContent="center" marginBottom={"10px"}>
@@ -137,3 +151,7 @@ const About = () => { //uma notação diferente para function
 }
 
 export default About
+function useTranslatin(): { t: any } {
+  throw new Error("Function not implemented.")
+}
+
