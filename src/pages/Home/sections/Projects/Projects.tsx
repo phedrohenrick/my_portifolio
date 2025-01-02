@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import AnimatedBackground from "../../../../assets/images/AnimatedBackground/ProjectScreen.png";
 import { Container, Grid, Typography } from "@mui/material";
 import ProjectSlide from "../../../../components/StyledSlide.tsx/StyledSlide";
-import { Trans, useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 
 

@@ -1,6 +1,6 @@
 import { AppBar, MenuItem, styled, Toolbar } from "@mui/material"
 import { Link } from "react-scroll"; // Importa o Link do react-scroll para rolagem suave
-import { Trans, useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 
 
 const NavBar = () =>{  //uma notação diferente para function 
