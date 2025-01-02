@@ -40,14 +40,14 @@ const Hero = () =>{  //uma notação diferente para function
 
   const StyledHero = styled("div")(({theme}) => ({
     backgroundImage: `url(${AnimatedBackground})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-    height: "120vh",
-    width: "100%",
-    maxwidth: "100%",
-    display: "flex",
-    alignItems: "center",
+    // backgroundSize: 'cover',
+    // backgroundRepeat: 'no-repeat',
+    // backgroundPosition: 'center',
+    //height: "120vh",
+    // width: "100%",
+    // maxwidth: "100%",
+    // display: "flex",
+    // alignItems: "center",
 
 
     [theme.breakpoints.up('xs')]: { // <= mobile
@@ -56,22 +56,31 @@ const Hero = () =>{  //uma notação diferente para function
   },
   [theme.breakpoints.up('md')]: { // >=mobile
       paddingTop: "0",
-  }
+  },
+  
   }))
 
   const StyledImg = styled("img")(() => ({
-        width:"80%",
+        
+      
         borderRadius :"50%",
         border: `1px solid ${theme.palette.primary.dark}`,
         
-        [theme.breakpoints.up('xs')]: { // <= mobile
-          paddingTop: "0px",
-          marginLeft: "40px",
-          marginTop: "40px"
-      },
-      [theme.breakpoints.up('md')]: { // >=mobile
-          paddingTop: "0px",
-      }
+        
+
+      //    [theme.breakpoints.up('xs')]: { // <= mobile
+         
+      //  },
+      //  [theme.breakpoints.up('md')]: { // >=mobile
+      //      paddingTop: "0px",
+      //  },
+      //  '@media (max-width: 900px)': {
+      //   width:"70%",  // Altura menor para telas menores
+      //   },
+      //   '@media (max-width: 899px)': {
+      //   width:"60%",  // Altura menor para telas menores
+      //   height : "60%",
+      //   },
   }))
   
  
@@ -139,14 +148,13 @@ const Hero = () =>{  //uma notação diferente para function
                   <Grid item xs={12} md = {5} >
                     <Box className="relative justify-self-center z-0 w-48 left-2 top-[15%] sm:w-72 md:w-60 xl:w-72 ">
                     <StyledImg src = {Avatar}/>
-                    </Box>
-                     
+                    </Box>   
                   </Grid>
                   
                   <Grid item xs={12} md = {7} >
                     
                       <Typography variant="h1" color = "secondary" textAlign="center"  pb={2} >Phedro Henrick</Typography>
-                      <Typography variant="h2" color = "secondary" textAlign="center" >Fullstack developer</Typography>
+                      <Typography variant="h2" color = "secondary" textAlign="center" >{t('title')}</Typography>
 
                     <Grid container display="flex" justifyContent="center" spacing={2} pt={3} marginBottom={3} >
                           <Grid item xs = {12} md={6} display= "flex" justifyContent="center">
@@ -222,10 +230,13 @@ const Hero = () =>{  //uma notação diferente para function
                       </Grid>
                   </Grid>
                 </Grid>
-
+              </motion.div>
               
               </Container>
+
+             
           </StyledHero> 
+        
       </>
     )
 
