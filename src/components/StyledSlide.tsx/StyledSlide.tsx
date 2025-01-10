@@ -142,6 +142,7 @@ import { t } from "i18next";
 
         <Swiper
           slidesPerView={1.65}
+          loop={true}
           spaceBetween={15}
           breakpoints={{
             1024: {
