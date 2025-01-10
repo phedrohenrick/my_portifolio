@@ -60,11 +60,13 @@ const WhatPeopleThink = () =>{ //uma notação diferente para function
                 </Typography>
               </div>
               <motion.div 
-              initial={{ opacity: 0, x: 0 }}
+              initial={{ opacity: 0, x: -50 }}
               whileInView={{ 
                 opacity: 1,
-                x : 50
-              }} className="text-md sm:text-lg md:text-xl lg:text-2xl text-left sm:text-center mt-4 mr-6 ">
+                x : 0
+              }} 
+              viewport={{once:true}}
+              className="text-md sm:text-lg md:text-xl lg:text-2xl text-left sm:text-center mt-4 mr-6 ">
               <Typography variant="h6" color = "primary" fontWeight= "bold" textAlign="left" >
                   <Trans
                       i18nKey="personal_review_R" 
@@ -91,11 +93,13 @@ const WhatPeopleThink = () =>{ //uma notação diferente para function
         </div>
         
         
-        <motion.div  initial={{ opacity: 0, x: 0 }}
+        <motion.div  initial={{ opacity: 0, x: 50 }}
                 whileInView={{ 
                   opacity: 1,
-                  x : -50
-                }} className="text-md sm:w-[65%] lg:w-[55%] sm:text-lg md:text-xl lg:text-2xl text-center sm:text-right mt-4 max-w-full sm:max-w-[90%] md:max-w-[80%] ml-6">
+                  x : 0
+                }}
+                viewport={{once:true}}
+                className="text-md sm:w-[65%] lg:w-[55%] sm:text-lg md:text-xl lg:text-2xl text-center sm:text-right mt-4 max-w-full sm:max-w-[90%] md:max-w-[80%] ml-6">
             <Typography variant="h6" color = "primary" fontWeight= "bold" textAlign="right">
             <Trans
           i18nKey="personal_review_A" 

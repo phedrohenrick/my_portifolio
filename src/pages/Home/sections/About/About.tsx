@@ -12,6 +12,7 @@ import { Container, Grid, Typography } from "@mui/material";
 import AnimatedBackground from "portifolio/src/assets/images/AnimatedBackground/AboutBackground.gif";
 import StyledCard from "portifolio/src/components/StyledCard/StyledCard"
 import { Trans, useTranslation } from 'react-i18next'
+import { motion } from "framer-motion"
 
 
 const About = () => { //uma notação diferente para function 
@@ -69,6 +70,16 @@ const {t} = useTranslation();
             </Grid>
 
             <Grid item xs={12} md={5}>
+
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ 
+                opacity: 1,
+                x : 0
+                
+              }}
+              transition={{ duration: 0.3 }}
+              viewport={{once:true}}>
               <Typography variant="h5" color="primary" textAlign="left" pb={2} fontWeight={"bold"} marginTop={"-40px"}>
 
               <Trans
@@ -77,9 +88,22 @@ const {t} = useTranslation();
               />
 
                 </Typography>
+
+                </motion.div>
             </Grid>
 
             <Grid item xs={12} md={6}>
+
+            <motion.div 
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ 
+                opacity: 1,
+                x : 0
+                
+              }}
+              transition={{ duration: 0.3 }}
+              viewport={{once:true}}
+>
               <Typography variant="h5" color="primary" textAlign="left" pb={2} fontWeight={"bold"} marginTop={"-40px"} > 
               <Trans
                i18nKey="tx2" 
@@ -87,6 +111,7 @@ const {t} = useTranslation();
               />
 
                  </Typography>
+                 </motion.div>
             </Grid>
 
             <Grid item xs={12} md={4} >

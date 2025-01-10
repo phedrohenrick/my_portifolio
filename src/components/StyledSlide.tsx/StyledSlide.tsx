@@ -2,12 +2,10 @@ import {useState } from "react";
 import {ProjectsInterface} from "../../interfaces/Projects.tsx";
 import { motion, AnimatePresence } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { styled } from "@mui/material";
 import "swiper/swiper-bundle.css";
 import { Image } from "@nextui-org/react";
 import { Trans } from 'react-i18next';
 import { t } from "i18next";
-
 
 
     const projectList: ProjectsInterface[] = [
@@ -127,27 +125,6 @@ import { t } from "i18next";
       },   
       
     ]
- 
-    
-    const StyledSwiper = styled(Swiper)(() => ({
-      
-      //width:"1500px",
-      maxWidth : "100%",
-      maxHeight: "100%",
-      height: "100%",
-      padding: "20px",
-      backgroundColor: "#eef7f7", // cor de fundo do swiper
-
-      "& .swiper-slide": {
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#dfe8e8", // cor de fundo do slide
-        borderRadius: "5px", // arredondar os cantos do slide
-        boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)", // sombra do slide
-       
-      },
-    }))
 
     const HandleClick = (link: string) => {
         window.location.href = link;
@@ -155,17 +132,17 @@ import { t } from "i18next";
    
     
 
-    const ProjectSlide: React.FC = () =>{  //uma notação diferente para function
-      const [selectedId, setSelectedId] = useState<number | null>(null);
+          const ProjectSlide: React.FC = () =>{  //uma notação diferente para function
+            const [selectedId, setSelectedId] = useState<number | null>(null);
 
-          
+            
       return (
 
         <div className="w-[100%] relative">
-        <StyledSwiper
+
+        <Swiper
           slidesPerView={1.65}
           spaceBetween={15}
-          loop={true}
           breakpoints={{
             1024: {
               slidesPerView: 2.1,
@@ -175,7 +152,7 @@ import { t } from "i18next";
             },
         
           }}
-          className="z-50 top-1/2 h-120"
+          className="z-50 top-1/2 h-auto"
         >
           {projectList.map((data, index) => (
             <SwiperSlide key={index} onClick={() => setSelectedId(index)}>
@@ -185,17 +162,19 @@ import { t } from "i18next";
 
                   layoutId={`image-${index}`}
                   className = "relative"
-                  style = {{padding : "3%"}}
-                  whileHover={{scale:1.1}}
+                  style = {{paddingTop : "3%"}}
+                  whileHover={{scale:0.9}}
 
                   >
                     <Image
                       alt="Project image"
                       src={data.imageUrl}
+                      
                       style={{ objectFit: "cover" }}
                       className="w-full h-full bg-primary"
                     />
                   </motion.div>
+
                 ) : (
                   <div
                     className="relative bg-secondary flex items-center justify-center text-white"
@@ -206,13 +185,14 @@ import { t } from "i18next";
                     </div>
                   </div>
                 )}
-                <p className="font-semibold text-[85%] mt-4 md:mt-2 sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+                <p className="font-semibold text-[85%] mt-4 md:mt-2 sm:text-base md:text-lg lg:text-xl xl:text-2xl justify-l">
                   {data.title}
                 </p>
               </motion.div>
             </SwiperSlide>
           ))}
-        </StyledSwiper>
+        </Swiper>
+        
         <AnimatePresence>
             {selectedId !== null && (
               <motion.div

@@ -139,11 +139,15 @@ const Hero = () =>{  //uma notação diferente para function
               </Grid>
 
               <motion.div 
-              initial={{ opacity: 0, x: 0 }}
+              initial={{ opacity: 0, y: 100 }}
               whileInView={{ 
                 opacity: 1,
-                y : 50
-              }}>
+                y : 0
+                
+              }}
+              
+              transition={{ duration: 0.4 }}
+              viewport={{once:true}}>
 
               <Grid container spacing={4} justifyContent="center"  alignItems="center" >
                   <Grid item xs={12} md = {5} style={{ textAlign: 'center' }} className="relative">

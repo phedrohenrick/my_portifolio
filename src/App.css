@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 
 #root {
   margin: 0 auto;
@@ -31,7 +27,5 @@ html {
   position: relative;
   margin: 0 auto; 
 }
-
-
 
 

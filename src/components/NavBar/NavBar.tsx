@@ -14,7 +14,7 @@ const NavBar = () =>{  //uma notação diferente para function
       backgroundSize: 'cover',
            backgroundRepeat: 'no-repeat',
            backgroundPosition: 'center',
-           width: "100vw",
+           width: "100%",
         
        
   }))
