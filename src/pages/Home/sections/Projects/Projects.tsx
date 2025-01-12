@@ -31,13 +31,18 @@ const Project = () =>{  //uma notação diferente para function
          <StyledProjects id="projetos">
             <Container >
               <Grid container spacing={2} alignItems="center" >
-                  <Grid item xs={12} md = {12} fontWeight={"bold"} >
-                      <Typography variant="h2" color = "primnary" fontWeight={"bold"}>
+                  <Grid item xs={12} md = {12} fontWeight={"bold"} className="flex-row-reverse items-center justify-center sm:justify-start sm:m-0 gap-6 sm:gap-8 sm:mr-[20%] md:mr-[20%] lg:mr-[20%] xl:mr-[23%] 2xl:mr-[26%]">
+                      <Typography variant="h2" color = "primnary" fontWeight={"bold"} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold z-10">  
                       {t("title_p")}
                       </Typography>
                   </Grid>
 
-                  <Grid item xs={12} md = {12}  fontWeight={"bold"} marginBottom={"100px"}>
+                  <Grid
+                      item
+                      xs={12}
+                      md={12}
+                      className="font-bold mb-[100px] sm:mb-[50px] px-4 sm:px-6 md:px-8"
+                    >
                     
                       <ProjectSlide/>
                   </Grid>

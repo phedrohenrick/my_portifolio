@@ -40,13 +40,6 @@ const Hero = () =>{  //uma notação diferente para function
 
   const StyledHero = styled("div")(({theme}) => ({
     backgroundImage: `url(${AnimatedBackground})`,
-    // backgroundSize: 'cover',
-    // backgroundRepeat: 'no-repeat',
-    // backgroundPosition: 'center',
-    //height: "120vh",
-    // width: "100%",
-    // maxwidth: "100%",
-    //display: "flex",
     alignItems: "center",
   
 
@@ -67,21 +60,6 @@ const Hero = () =>{  //uma notação diferente para function
         borderRadius :"50%",
         border: `1px solid ${theme.palette.primary.dark}`,
        
-        
-
-      //    [theme.breakpoints.up('xs')]: { // <= mobile
-         
-      //  },
-      //  [theme.breakpoints.up('md')]: { // >=mobile
-      //      paddingTop: "0px",
-      //  },
-      //  '@media (max-width: 900px)': {
-      //   width:"70%",  // Altura menor para telas menores
-      //   },
-      //   '@media (max-width: 899px)': {
-      //   width:"60%",  // Altura menor para telas menores
-      //   height : "60%",
-      //   },
   }))
   
  
@@ -151,14 +129,14 @@ const Hero = () =>{  //uma notação diferente para function
 
               <Grid container spacing={4} justifyContent="center"  alignItems="center" >
                   <Grid item xs={12} md = {5} style={{ textAlign: 'center' }} className="relative">
-                    <Box className="relative z-0 w-48 top-[15%] sm:w-72 md:w-60 xl:w-72 ">
+                    <Box className="relative z-0 w-36 top-[10%] xs:w-44 sm:w-48 md:w-60 xl:w-72">
                     <StyledImg src = {Avatar}/>
                     </Box>   
                   </Grid>
                   
                   <Grid item xs={12} md = {7} >
                     
-                      <Typography variant="h1" color = "secondary" textAlign="center"  pb={2} >Phedro Henrick</Typography>
+                      <Typography variant="h1" color = "secondary" textAlign="center"   className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center text-secondary pb-2">Phedro Henrick</Typography>
                       <Typography variant="h2" color = "secondary" textAlign="center" >{t('title')}</Typography>
 
                     <Grid container display="flex" justifyContent="center" spacing={2} pt={3} marginBottom={3} >

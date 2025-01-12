@@ -6,6 +6,8 @@ import "swiper/swiper-bundle.css";
 import { Image } from "@nextui-org/react";
 import { Trans } from 'react-i18next';
 import { t } from "i18next";
+import { Autoplay, Navigation } from 'swiper/modules';
+import '../../../src/App.css';
 
 
     const projectList: ProjectsInterface[] = [
@@ -144,6 +146,19 @@ import { t } from "i18next";
           slidesPerView={1.65}
           loop={true}
           spaceBetween={15}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: true,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          }}
+          modules={[Autoplay, Navigation]}
+
           breakpoints={{
             1024: {
               slidesPerView: 2.1,
@@ -154,6 +169,7 @@ import { t } from "i18next";
         
           }}
           className="z-50 top-1/2 h-auto"
+          style={{ marginTop: 'auto', marginBottom: '20px' }}
         >
           {projectList.map((data, index) => (
             <SwiperSlide key={index} onClick={() => setSelectedId(index)}>
@@ -186,7 +202,7 @@ import { t } from "i18next";
                     </div>
                   </div>
                 )}
-                <p className="font-semibold text-[85%] mt-4 md:mt-2 sm:text-base md:text-lg lg:text-xl xl:text-2xl justify-l">
+                <p className="font-bold text-[85%] mt-4 md:mt-2 sm:text-base md:text-lg lg:text-xl xl:text-2xl justify-l">
                   {data.title}
                 </p>
               </motion.div>

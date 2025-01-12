@@ -80,7 +80,7 @@ const {t} = useTranslation();
               }}
               transition={{ duration: 0.3 }}
               viewport={{once:true}}>
-              <Typography variant="h5" color="primary" textAlign="left" pb={2} fontWeight={"bold"} marginTop={"-40px"}>
+              <Typography variant="body1" color="primary" textAlign="left" pb={2} fontWeight={"bold"} marginTop={"-40px"}>
 
               <Trans
                i18nKey="tx1" 
@@ -104,7 +104,7 @@ const {t} = useTranslation();
               transition={{ duration: 0.3 }}
               viewport={{once:true}}
 >
-              <Typography variant="h5" color="primary" textAlign="left" pb={2} fontWeight={"bold"} marginTop={"-40px"} > 
+              <Typography variant="body1" color="primary" textAlign="left" pb={2} fontWeight={"bold"} marginTop={"-40px"} > 
               <Trans
                i18nKey="tx2" 
               components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
