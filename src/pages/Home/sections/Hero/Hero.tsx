@@ -144,7 +144,7 @@ const Hero = () =>{  //uma notação diferente para function
                             
                               <StyledButton onClick={()=> {handleDownload()}}>
                                 <DownloadIcon/>
-                                <Typography>
+                                <Typography variant="body2">
                                     {t('btnCv')}
                                 </Typography>
                               </StyledButton>
@@ -154,7 +154,7 @@ const Hero = () =>{  //uma notação diferente para function
                         
                       <StyledButton onClick={() => {HandleClickConatact("#footer")}} >
                           <EmailIcon />
-                          <Typography>
+                          <Typography variant="body2">
                           {t('btnContact')}
                          </Typography>
                       </StyledButton>
