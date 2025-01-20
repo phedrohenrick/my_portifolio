@@ -1,0 +1,13 @@
+DOCUMENTAÇÃO PORTIFOLIO - REACT
+
+1. criar um projeto no vitejs
+
+https://vitejs.dev/guide/ 
+
+seguinte comando:
+ $ npm create vite@latest
+
+2. sobe tudo pro GitHub 
+
+3. rodar o comando: npm i
+serve para instalar todas as dependências necessárias.
