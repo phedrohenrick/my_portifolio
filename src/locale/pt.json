@@ -31,6 +31,10 @@
         "title_p5": "SistemaOBI",
         "desc_p5": "Sistema de Gerenciamento para a Olimpíada Brasileira de Informática Projeto acadêmico, com intuito de explorar as bases teóricas do paradigma orientado a objetos e as ferramentas do Java, desenvolvido para desktop com foco no gerenciamento de alunos participantes da OBI. Permite funcionalidades como cadastro, edição, exclusão e visualização de dados. Construído com integração ao banco de dados PostgreSQL, destaca-se por sua interface intuitiva e praticidade no gerenciamento de informações. Um exemplo prático de aplicação de conceitos de desenvolvimento de software e manipulação de banco de dados.",
 
+        "title_p6": "Backend Mineradora com Quarkus",
+        "desc_p6": "Aqui, desenvolvo o backend para um sistema de uma mineradora com o intuito de explorar o Quarkus Framework e a mensageria com Kafka. Nesse sistema, adoto a arquitetura de microserviços, que se comunicam via REST e mensageria, em uma abordagem híbrida. O sistema é composto por quatro microserviços: um gerencia as autenticações, outro consulta a cotação atual do dólar por meio de uma API externa, o terceiro administra as propostas de compra dos clientes, e o quarto envia essas propostas para os analistas junto a cotação do dólar do dia. Os dados para o microserviço de propostas são recebidos via eventos do Kafka, enviados pelo segundo e terceiro microserviços. Venha conhecer mais!",
+
+
         "btnClose":"Fechar",
         "btnOpen_p": "Visite o projeto",
 
