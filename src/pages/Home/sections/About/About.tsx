@@ -122,48 +122,19 @@ const {t} = useTranslation();
               />
               </Typography>
             </Grid>
-            <Grid container justifyContent="center" marginBottom={"10px"}>
-              <Grid item xs={12} md={6} >
-                <StyledCard >
-                  <Grid container justifyContent="center" alignItems="center">
-                    <Grid item xs={4} md={4} className="flex justify-center">
-                      <StyledImg src={Git} alt="Git" className="w-full h-auto" />
-                    </Grid>
-                    <Grid item xs={4} md={4} className="flex justify-center">
-                      <StyledImg src={Java} alt="Java" className="w-full h-auto" />
-                    </Grid>
-                    <Grid item xs={4} md={4} className="flex justify-center">
-                      <StyledImg src={Angular} alt="Angular" className="w-full h-auto" />
-                    </Grid>
-
-
-
-                    <Grid item xs={4} md={4} className="flex justify-center">
-                      <StyledImg src={Spring} alt="Spring" className="w-full h-auto" />
-                    </Grid>
-                    <Grid item xs={4} md={4} className="flex justify-center">
-                      <StyledImg src={React} alt="React" className="w-full h-auto" />
-                    </Grid>
-                    <Grid item xs={4} md={4} className="flex justify-center">
-                      <StyledImg src={Docker} alt="Docker" className="w-full h-auto" />
-                    </Grid>
-
-
-                    <Grid item xs={4} md={4} className="flex justify-center">
-                      <StyledImg src={c} alt="c" className="w-full h-auto" />
-                    </Grid>
-                    <Grid item xs={4} md={4} className="flex justify-center" >
-                      <StyledImg src={postgesql} alt="PostgreSql" className="w-full h-auto" />
-                    </Grid>
-                    <Grid item xs={4} md={4} className="flex justify-center">
-                      <StyledImg src={typescript} alt="typescript" className="w-full h-auto" />
-                    </Grid>
-
-
-                  </Grid>
-                </StyledCard>
-              </Grid>
-            </Grid>
+            <Grid container justifyContent="center">
+  <Grid item xs={12} md={6}>
+    <StyledCard>
+      <Grid container justifyContent="center" alignItems="center" spacing={4} >
+        {[Git, Java, Angular, Spring, React, Docker, c, postgesql, typescript].map((imgSrc, index) => (
+          <Grid item xs={4} md={4} key={index} className="flex justify-center items-center">
+            <StyledImg src={imgSrc} alt={imgSrc.toString()} className="w-20 md:w-28 lg:w-32 xl:w-36 h-auto object-contain" />
+          </Grid>
+        ))}
+      </Grid>
+    </StyledCard>
+  </Grid>
+</Grid>
 
           </Grid>
         </Container>

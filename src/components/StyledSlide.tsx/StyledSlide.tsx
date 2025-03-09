@@ -8,6 +8,7 @@ import { Trans } from 'react-i18next';
 import { t } from "i18next";
 import { Autoplay, Navigation } from 'swiper/modules';
 import '../../../src/App.css';
+import { Typography } from "@mui/material";
 
 
     const projectList: ProjectsInterface[] = [
@@ -91,18 +92,14 @@ import '../../../src/App.css';
        components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
        />,
         description: "",
-        imageUrl: "DownloadFiles/images/inDevelopment.png",
+        imageUrl: "DownloadFiles/images/popscofe.png",
         link: "https://github.com/phedrohenrick",
         technologies:[
-          "framework Angular",
+          "React",
            "TypeScript", 
            "JavaScript", 
            "HTML", 
            "CSS", 
-           "framework Spring",
-           "Java",
-           "JPA",
-           "postgreSQL"
           ],
         isInDevelopment: true
       },
@@ -125,6 +122,30 @@ import '../../../src/App.css';
           ],
         isInDevelopment: false
       },   
+
+      {
+        title: <Trans
+        i18nKey="title_p6" 
+       components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
+       />,
+        description: <Trans
+        i18nKey="desc_p6" 
+       components={{ 1:  <span style= {{color: "#E67E22"}}/>}} 
+       />,
+        imageUrl: "DownloadFiles/images/inDevelopment.png",
+        link: "https://github.com/phedrohenrick/cotacao_microservice_quarkus",
+        technologies:[
+           "Java",
+           "Quarkus",
+           "Microserviços",
+           "Kafkaa",
+           "postgreSQL",
+           "Hibernate",
+            "Maven",
+            "Docker",
+          ],
+        isInDevelopment: false
+      },
       
     ]
 
@@ -238,14 +259,26 @@ import '../../../src/App.css';
                       </motion.div>
                     )}
                     <motion.h5 className="text-lg font-bold mt-4">
-                      {projectList[selectedId]?.title}
+                        <Typography variant="h3">
+                          {projectList[selectedId]?.title}
+                        </Typography>
                     </motion.h5>
                     <motion.p className="mt-4">
-                      {projectList[selectedId]?.description}
+                      <Typography  variant="body1" color="primary" textAlign="left">
+                        {projectList[selectedId]?.description}
+                      </Typography>
                     </motion.p>
                     <motion.p className="mt-4">
-                      <span className="font-bold">{t("technology")}</span>{" "}
+                      <span>
+                        <Typography fontWeight={"bold"} variant="body1" color="primary" textAlign="center">
+                          {t("technology")}
+                        </Typography>
+                      </span>{" "}
+
+                      <Typography variant="body1" color="primary">
                       {projectList[selectedId]?.technologies.join(", ")}
+                      </Typography>
+
                     </motion.p>
                     {projectList[selectedId]?.isInDevelopment && (
                       <motion.p className="mt-4">In Development</motion.p>
