@@ -9,20 +9,20 @@ interface StyledCardSkillProps{
 const StyledCardSkill: React.FC<StyledCardSkillProps> = ({children}) =>{  //uma notação diferente para function 
 
 
-    const StyledCard = styled(Card)(() => ({
+  const StyledCard = styled(Card)(({ }) => ({
           backgroundColor: "#d4e0e0",
           padding: "40px",
           color: "#ffffff",
           borderRadius: "25px",
           boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
-          width: "100%",  // Permite que o card se ajuste ao container pai
-          maxWidth: "500px", // Mantém um limite para não ficar muito grande
-          height: "auto",  // Altura automática para se ajustar ao conteúdo
+          width: "100%",  
+          maxWidth: "500px",
+          height: "auto",  
           display: "flex",
-          flexDirection: "column",  // Empilha os elementos verticalmente
+          flexDirection: "column",  
           alignItems: "center",
           justifyContent: "center",
-          overflow: "hidden",  // Impede que os itens vazem para fora do card
+          overflow: "hidden",  
         
           '@media (max-width: 768px)': {
             padding: "20px", // Reduz o padding para mais espaço interno
@@ -35,7 +35,7 @@ const StyledCardSkill: React.FC<StyledCardSkillProps> = ({children}) =>{  //uma 
             flexWrap: "wrap"  // Permite que os itens quebrem linha em telas pequenas
         },
           
-        }))
+        }));
 
     return (
       <>
