@@ -29,7 +29,10 @@
     
         "title_p5": "OBI System",
         "desc_p5": "Management System for the Brazilian Olympiad in Informatics. An academic project aimed at exploring the theoretical foundations of the object-oriented paradigm and Java tools, developed for desktop use with a focus on managing students participating in the OBI. It provides functionalities such as registration, editing, deletion, and viewing of data. Built with PostgreSQL database integration, it stands out for its intuitive interface and practicality in managing information. A practical example of applying software development concepts and database manipulation.",
-    
+        
+        "title_p6": "Mining Backend with Quarkus",
+        "desc_p6": "Here, I develop the backend for a mining company system with the goal of exploring the Quarkus Framework and messaging with Kafka. In this system, I adopt a microservices architecture that communicates via REST and messaging in a hybrid approach. The system consists of four microservices: one manages authentications, another queries the current dollar exchange rate through an external API, the third handles customer purchase proposals, and the fourth sends these proposals to analysts along with the daily dollar rate. The data for the proposals microservice is received via Kafka events, sent by the second and third microservices. Come learn more!",
+
         "btnClose": "Close",
         "btnOpen_p": "Visit the project",
     
